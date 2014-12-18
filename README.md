@@ -9,18 +9,17 @@ the $INSTANS_HOME environment variable points to the INSTANS root directory._
 
 This example considers all the types of event processing agents listed in [1] and shows a translation of each type into
 SPARQL 1.1, forming an interconnected SPARQL-based event processing
-network. The background is explained in this article:
+network. Further background:
 
 Rinne, M.; Nuutila, E.: Constructing Event Processing Systems of
 Layered and Heterogeneous Events with SPARQL. The 13th International
 Conference on Ontologies, DataBases, and Applications of Semantics
 (ODBASE 2014, 27-31 Oct, Amantea, Italy). First published by Springer.
 
-Proceedings:
-http://link.springer.com/chapter/10.1007/978-3-662-45563-0_42
-Paper:
+* [Proceedings] (http://link.springer.com/chapter/10.1007/978-3-662-45563-0_42)
+* Paper:
 http://www.cs.hut.fi/~mjrinne/papers/odbase2014/Constructing%20Event%20Processing%20Systems%20of%20Layered%20and%20Heterogeneous%20Events%20with%20SPARQL%20%28annotated%20author%20copy%29.pdf
-Presentation: http://www.cs.hut.fi/~mjrinne/papers/odbase2014/Constructing%20Event%20Processing%20Systems%20with%20SPARQL.pdf
+* Presentation: http://www.cs.hut.fi/~mjrinne/papers/odbase2014/Constructing%20Event%20Processing%20Systems%20with%20SPARQL.pdf
 
 The command line to run the example is in the one-line shell script "cep2sparql.sh":
 
