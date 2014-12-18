@@ -1,2 +1,1 @@
-#!/bin/sh
-../../../bin/instans --prefix-encoding=true -r construct-event-output.rq -r EPA-All.rq --input-blocks=CEP2SPARQL_SamplePattern.trig --allow-rule-instance-removal=true --rdf-operations=add:execute-snapshot:remove:execute:flush --time=- --input-blocks=CEP2SPARQL_SampleEvents.trig
+$INSTANS_HOME/bin/instans --prefix-encoding=true -r queries/construct-event-output.rq -r queries/EPA-All.rq --input-blocks=input/CEP2SPARQL_SamplePattern.trig --allow-rule-instance-removal=true --rdf-operations=add:execute-snapshot:remove:execute:flush --time=- --input-blocks=input/CEP2SPARQL_SampleEvents.trig
