@@ -1,0 +1,909 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE <http://instans.org/>
+PREFIX : <http:instans.org/default#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX ep: <http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#>
+PREFIX omgeo: <http://www.ontotext.com/owlim/geo#>
+PREFIX ff: <http://factforge.net/>
+<Translated-Eve1> { <Eve1> :locationName "Espoo";
+                           rdf:type ep:EventObject;
+                           ssn:Sensor <http://#p1>;
+                           ep:hasEventObjectSamplingTime "2012-03-05T13:32:28"^^xsd:dateTime;
+                           geo:Point _:2 .
+
+                    _:2 geo:long 24.876108;
+                        geo:lat 60.15922 .
+}
+<Translated-Eve2> { <Eve2> :locationName "Espoo";
+                           rdf:type ep:EventObject;
+                           ssn:Sensor <http://#p2>;
+                           ep:hasEventObjectSamplingTime "2012-03-05T13:32:28"^^xsd:dateTime;
+                           geo:Point _:3 .
+
+                    _:3 geo:long 24.857418;
+                        geo:lat 60.16842 .
+}
+<Translated-Eve3> { <Eve3> :locationName "Espoo";
+                           rdf:type ep:EventObject;
+                           ssn:Sensor <http://#p1>;
+                           ep:hasEventObjectSamplingTime "2012-03-05T13:32:36"^^xsd:dateTime;
+                           geo:Point _:4 .
+
+                    _:4 geo:long 24.876247;
+                        geo:lat 60.15915 .
+}
+<Translated-Eve4> { <Eve4> :locationName "Espoo";
+                           rdf:type ep:EventObject;
+                           ssn:Sensor <http://#p2>;
+                           ep:hasEventObjectSamplingTime "2012-03-05T13:32:36"^^xsd:dateTime;
+                           geo:Point _:5 .
+
+                    _:5 geo:long 24.857391;
+                        geo:lat 60.16832 .
+}
+<Translated-Eve5> { <Eve5> :locationName "Espoo";
+                           rdf:type ep:EventObject;
+                           ssn:Sensor <http://#p1>;
+                           ep:hasEventObjectSamplingTime "2012-03-05T13:32:44"^^xsd:dateTime;
+                           geo:Point _:6 .
+
+                    _:6 geo:long 24.876436;
+                        geo:lat 60.159122 .
+}
+<Translated-Eve6> { <Eve6> :locationName "Espoo";
+                           rdf:type ep:EventObject;
+                           ssn:Sensor <http://#p2>;
+                           ep:hasEventObjectSamplingTime "2012-03-05T13:32:44"^^xsd:dateTime;
+                           geo:Point _:7 .
+
+                    _:7 geo:long 24.857367;
+                        geo:lat 60.16822 .
+}
+<Translated-Eve7> { <Eve7> :locationName "Espoo";
+                           rdf:type ep:EventObject;
+                           ssn:Sensor <http://#p1>;
+                           ep:hasEventObjectSamplingTime "2012-03-05T13:32:52"^^xsd:dateTime;
+                           geo:Point _:8 .
+
+                    _:8 geo:long 24.87663;
+                        geo:lat 60.1591 .
+}
+<Translated-Eve8> { <Eve8> :locationName "Espoo";
+                           rdf:type ep:EventObject;
+                           ssn:Sensor <http://#p2>;
+                           ep:hasEventObjectSamplingTime "2012-03-05T13:32:52"^^xsd:dateTime;
+                           geo:Point _:9 .
+
+                    _:9 geo:long 24.85735;
+                        geo:lat 60.16812 .
+}
+<Translated-Eve9> { <Eve9> :locationName "Espoo";
+                           rdf:type ep:EventObject;
+                           ssn:Sensor <http://#p1>;
+                           ep:hasEventObjectSamplingTime "2012-03-05T13:33:00"^^xsd:dateTime;
+                           geo:Point _:10 .
+
+                    _:10 geo:long 24.876827;
+                         geo:lat 60.159077 .
+}
+<Translated-Eve10> { <Eve10> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:33:00"^^xsd:dateTime;
+                             geo:Point _:11 .
+
+                     _:11 geo:long 24.857332;
+                          geo:lat 60.168022 .
+}
+<Translated-Eve11> { <Eve11> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:33:08"^^xsd:dateTime;
+                             geo:Point _:12 .
+
+                     _:12 geo:long 24.857323;
+                          geo:lat 60.167923 .
+}
+<Translated-Eve12> { <Eve12> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:33:09"^^xsd:dateTime;
+                             geo:Point _:13 .
+
+                     _:13 geo:long 24.87682;
+                          geo:lat 60.158974 .
+}
+<Translated-Eve13> { <Eve13> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:33:16"^^xsd:dateTime;
+                             geo:Point _:14 .
+
+                     _:14 geo:long 24.857313;
+                          geo:lat 60.16782 .
+}
+<Translated-Eve14> { <Eve14> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:33:17"^^xsd:dateTime;
+                             geo:Point _:15 .
+
+                     _:15 geo:long 24.87679;
+                          geo:lat 60.158875 .
+}
+<Translated-Eve15> { <Eve15> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:33:24"^^xsd:dateTime;
+                             geo:Point _:16 .
+
+                     _:16 geo:long 24.857323;
+                          geo:lat 60.16772 .
+}
+<Translated-Eve16> { <Eve16> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:33:25"^^xsd:dateTime;
+                             geo:Point _:17 .
+
+                     _:17 geo:long 24.876755;
+                          geo:lat 60.158775 .
+}
+<Translated-Eve17> { <Eve17> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:33:32"^^xsd:dateTime;
+                             geo:Point _:18 .
+
+                     _:18 geo:long 24.85736;
+                          geo:lat 60.167625 .
+}
+<Translated-Eve18> { <Eve18> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:33:33"^^xsd:dateTime;
+                             geo:Point _:19 .
+
+                     _:19 geo:long 24.876719;
+                          geo:lat 60.15868 .
+}
+<Translated-Eve19> { <Eve19> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:33:40"^^xsd:dateTime;
+                             geo:Point _:20 .
+
+                     _:20 geo:long 24.8574;
+                          geo:lat 60.167526 .
+}
+<Translated-Eve20> { <Eve20> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:33:41"^^xsd:dateTime;
+                             geo:Point _:21 .
+
+                     _:21 geo:long 24.876684;
+                          geo:lat 60.15858 .
+}
+<Translated-Eve21> { <Eve21> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:33:48"^^xsd:dateTime;
+                             geo:Point _:22 .
+
+                     _:22 geo:long 24.85744;
+                          geo:lat 60.167427 .
+}
+<Translated-Eve22> { <Eve22> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:33:49"^^xsd:dateTime;
+                             geo:Point _:23 .
+
+                     _:23 geo:long 24.876648;
+                          geo:lat 60.15848 .
+}
+<Translated-Eve23> { <Eve23> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:33:56"^^xsd:dateTime;
+                             geo:Point _:24 .
+
+                     _:24 geo:long 24.857483;
+                          geo:lat 60.16733 .
+}
+<Translated-Eve24> { <Eve24> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:33:57"^^xsd:dateTime;
+                             geo:Point _:25 .
+
+                     _:25 geo:long 24.876612;
+                          geo:lat 60.158382 .
+}
+<Translated-Eve25> { <Eve25> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:34:04"^^xsd:dateTime;
+                             geo:Point _:26 .
+
+                     _:26 geo:long 24.857523;
+                          geo:lat 60.167233 .
+}
+<Translated-Eve26> { <Eve26> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:34:05"^^xsd:dateTime;
+                             geo:Point _:27 .
+
+                     _:27 geo:long 24.876575;
+                          geo:lat 60.158287 .
+}
+<Translated-Eve27> { <Eve27> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:34:12"^^xsd:dateTime;
+                             geo:Point _:28 .
+
+                     _:28 geo:long 24.857565;
+                          geo:lat 60.167133 .
+}
+<Translated-Eve28> { <Eve28> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:34:14"^^xsd:dateTime;
+                             geo:Point _:29 .
+
+                     _:29 geo:long 24.876654;
+                          geo:lat 60.158195 .
+}
+<Translated-Eve29> { <Eve29> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:34:20"^^xsd:dateTime;
+                             geo:Point _:30 .
+
+                     _:30 geo:long 24.857605;
+                          geo:lat 60.167038 .
+}
+<Translated-Eve30> { <Eve30> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:34:23"^^xsd:dateTime;
+                             geo:Point _:31 .
+
+                     _:31 geo:long 24.876764;
+                          geo:lat 60.15811 .
+}
+<Translated-Eve31> { <Eve31> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:34:28"^^xsd:dateTime;
+                             geo:Point _:32 .
+
+                     _:32 geo:long 24.857647;
+                          geo:lat 60.16694 .
+}
+<Translated-Eve32> { <Eve32> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:34:31"^^xsd:dateTime;
+                             geo:Point _:33 .
+
+                     _:33 geo:long 24.87694;
+                          geo:lat 60.158066 .
+}
+<Translated-Eve33> { <Eve33> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:34:36"^^xsd:dateTime;
+                             geo:Point _:34 .
+
+                     _:34 geo:long 24.857687;
+                          geo:lat 60.16684 .
+}
+<Translated-Eve34> { <Eve34> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:34:40"^^xsd:dateTime;
+                             geo:Point _:35 .
+
+                     _:35 geo:long 24.877;
+                          geo:lat 60.15797 .
+}
+<Translated-Eve35> { <Eve35> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:34:44"^^xsd:dateTime;
+                             geo:Point _:36 .
+
+                     _:36 geo:long 24.857727;
+                          geo:lat 60.166744 .
+}
+<Translated-Eve36> { <Eve36> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:34:47"^^xsd:dateTime;
+                             geo:Point _:37 .
+
+                     _:37 geo:long 24.879692;
+                          geo:lat 60.154015 .
+}
+<Translated-Eve37> { <Eve37> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:34:48"^^xsd:dateTime;
+                             geo:Point _:38 .
+
+                     _:38 geo:long 24.877172;
+                          geo:lat 60.15794 .
+}
+<Translated-Eve38> { <Eve38> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:34:52"^^xsd:dateTime;
+                             geo:Point _:39 .
+
+                     _:39 geo:long 24.857767;
+                          geo:lat 60.166645 .
+}
+<Translated-Eve39> { <Eve39> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:34:55"^^xsd:dateTime;
+                             geo:Point _:40 .
+
+                     _:40 geo:long 24.87983;
+                          geo:lat 60.15409 .
+}
+<Translated-Eve40> { <Eve40> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:34:56"^^xsd:dateTime;
+                             geo:Point _:41 .
+
+                     _:41 geo:long 24.877369;
+                          geo:lat 60.15792 .
+}
+<Translated-Eve41> { <Eve41> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:00"^^xsd:dateTime;
+                             geo:Point _:42 .
+
+                     _:42 geo:long 24.857807;
+                          geo:lat 60.166546 .
+}
+<Translated-Eve42> { <Eve42> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:03"^^xsd:dateTime;
+                             geo:Point _:43 .
+
+                     _:43 geo:long 24.879965;
+                          geo:lat 60.154163 .
+}
+<Translated-Eve43> { <Eve43> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:04"^^xsd:dateTime;
+                             geo:Point _:44 .
+
+                     _:44 geo:long 24.877565;
+                          geo:lat 60.1579 .
+}
+<Translated-Eve44> { <Eve44> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:08"^^xsd:dateTime;
+                             geo:Point _:45 .
+
+                     _:45 geo:long 24.85785;
+                          geo:lat 60.16645 .
+}
+<Translated-Eve45> { <Eve45> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:11"^^xsd:dateTime;
+                             geo:Point _:46 .
+
+                     _:46 geo:long 24.8801;
+                          geo:lat 60.154236 .
+}
+<Translated-Eve46> { <Eve46> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:12"^^xsd:dateTime;
+                             geo:Point _:47 .
+
+                     _:47 geo:long 24.877762;
+                          geo:lat 60.15788 .
+}
+<Translated-Eve47> { <Eve47> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:16"^^xsd:dateTime;
+                             geo:Point _:48 .
+
+                     _:48 geo:long 24.85789;
+                          geo:lat 60.16635 .
+}
+<Translated-Eve48> { <Eve48> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:19"^^xsd:dateTime;
+                             geo:Point _:49 .
+
+                     _:49 geo:long 24.880236;
+                          geo:lat 60.15431 .
+}
+<Translated-Eve49> { <Eve49> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:20"^^xsd:dateTime;
+                             geo:Point _:50 .
+
+                     _:50 geo:long 24.877958;
+                          geo:lat 60.15786 .
+}
+<Translated-Eve50> { <Eve50> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:24"^^xsd:dateTime;
+                             geo:Point _:51 .
+
+                     _:51 geo:long 24.857931;
+                          geo:lat 60.166256 .
+}
+<Translated-Eve51> { <Eve51> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:27"^^xsd:dateTime;
+                             geo:Point _:52 .
+
+                     _:52 geo:long 24.880371;
+                          geo:lat 60.154385 .
+}
+<Translated-Eve52> { <Eve52> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:28"^^xsd:dateTime;
+                             geo:Point _:53 .
+
+                     _:53 geo:long 24.878155;
+                          geo:lat 60.157837 .
+}
+<Translated-Eve53> { <Eve53> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:32"^^xsd:dateTime;
+                             geo:Point _:54 .
+
+                     _:54 geo:long 24.857973;
+                          geo:lat 60.166157 .
+}
+<Translated-Eve54> { <Eve54> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:35"^^xsd:dateTime;
+                             geo:Point _:55 .
+
+                     _:55 geo:long 24.880507;
+                          geo:lat 60.154457 .
+}
+<Translated-Eve55> { <Eve55> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:36"^^xsd:dateTime;
+                             geo:Point _:56 .
+
+                     _:56 geo:long 24.878351;
+                          geo:lat 60.157818 .
+}
+<Translated-Eve56> { <Eve56> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:40"^^xsd:dateTime;
+                             geo:Point _:57 .
+
+                     _:57 geo:long 24.858015;
+                          geo:lat 60.166058 .
+}
+<Translated-Eve57> { <Eve57> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:43"^^xsd:dateTime;
+                             geo:Point _:58 .
+
+                     _:58 geo:long 24.880642;
+                          geo:lat 60.15453 .
+}
+<Translated-Eve58> { <Eve58> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:44"^^xsd:dateTime;
+                             geo:Point _:59 .
+
+                     _:59 geo:long 24.878548;
+                          geo:lat 60.1578 .
+}
+<Translated-Eve59> { <Eve59> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:48"^^xsd:dateTime;
+                             geo:Point _:60 .
+
+                     _:60 geo:long 24.858057;
+                          geo:lat 60.165962 .
+}
+<Translated-Eve60> { <Eve60> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:51"^^xsd:dateTime;
+                             geo:Point _:61 .
+
+                     _:61 geo:long 24.880777;
+                          geo:lat 60.154606 .
+}
+<Translated-Eve61> { <Eve61> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:52"^^xsd:dateTime;
+                             geo:Point _:62 .
+
+                     _:62 geo:long 24.878744;
+                          geo:lat 60.157776 .
+}
+<Translated-Eve62> { <Eve62> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:56"^^xsd:dateTime;
+                             geo:Point _:63 .
+
+                     _:63 geo:long 24.858099;
+                          geo:lat 60.165863 .
+}
+<Translated-Eve63> { <Eve63> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:35:59"^^xsd:dateTime;
+                             geo:Point _:64 .
+
+                     _:64 geo:long 24.880913;
+                          geo:lat 60.15468 .
+}
+<Translated-Eve64> { <Eve64> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:00"^^xsd:dateTime;
+                             geo:Point _:65 .
+
+                     _:65 geo:long 24.87894;
+                          geo:lat 60.157757 .
+}
+<Translated-Eve65> { <Eve65> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:04"^^xsd:dateTime;
+                             geo:Point _:66 .
+
+                     _:66 geo:long 24.85814;
+                          geo:lat 60.165764 .
+}
+<Translated-Eve66> { <Eve66> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:07"^^xsd:dateTime;
+                             geo:Point _:67 .
+
+                     _:67 geo:long 24.881048;
+                          geo:lat 60.154755 .
+}
+<Translated-Eve67> { <Eve67> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:09"^^xsd:dateTime;
+                             geo:Point _:68 .
+
+                     _:68 geo:long 24.87904;
+                          geo:lat 60.157837 .
+}
+<Translated-Eve68> { <Eve68> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:12"^^xsd:dateTime;
+                             geo:Point _:69 .
+
+                     _:69 geo:long 24.858183;
+                          geo:lat 60.16567 .
+}
+<Translated-Eve69> { <Eve69> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:15"^^xsd:dateTime;
+                             geo:Point _:70 .
+
+                     _:70 geo:long 24.881184;
+                          geo:lat 60.154827 .
+}
+<Translated-Eve70> { <Eve70> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:17"^^xsd:dateTime;
+                             geo:Point _:71 .
+
+                     _:71 geo:long 24.879097;
+                          geo:lat 60.157932 .
+}
+<Translated-Eve71> { <Eve71> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:20"^^xsd:dateTime;
+                             geo:Point _:72 .
+
+                     _:72 geo:long 24.858225;
+                          geo:lat 60.16557 .
+}
+<Translated-Eve72> { <Eve72> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:23"^^xsd:dateTime;
+                             geo:Point _:73 .
+
+                     _:73 geo:long 24.881319;
+                          geo:lat 60.1549 .
+}
+<Translated-Eve73> { <Eve73> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:27"^^xsd:dateTime;
+                             geo:Point _:74 .
+
+                     _:74 geo:long 24.879206;
+                          geo:lat 60.158016 .
+}
+<Translated-Eve74> { <Eve74> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:28"^^xsd:dateTime;
+                             geo:Point _:75 .
+
+                     _:75 geo:long 24.858265;
+                          geo:lat 60.165474 .
+}
+<Translated-Eve75> { <Eve75> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:31"^^xsd:dateTime;
+                             geo:Point _:76 .
+
+                     _:76 geo:long 24.88145;
+                          geo:lat 60.154976 .
+}
+<Translated-Eve76> { <Eve76> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:35"^^xsd:dateTime;
+                             geo:Point _:77 .
+
+                     _:77 geo:long 24.879253;
+                          geo:lat 60.158115 .
+}
+<Translated-Eve77> { <Eve77> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:36"^^xsd:dateTime;
+                             geo:Point _:78 .
+
+                     _:78 geo:long 24.858307;
+                          geo:lat 60.165375 .
+}
+<Translated-Eve78> { <Eve78> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:39"^^xsd:dateTime;
+                             geo:Point _:79 .
+
+                     _:79 geo:long 24.881586;
+                          geo:lat 60.15505 .
+}
+<Translated-Eve79> { <Eve79> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:43"^^xsd:dateTime;
+                             geo:Point _:80 .
+
+                     _:80 geo:long 24.879303;
+                          geo:lat 60.15821 .
+}
+<Translated-Eve80> { <Eve80> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:44"^^xsd:dateTime;
+                             geo:Point _:81 .
+
+                     _:81 geo:long 24.858347;
+                          geo:lat 60.165276 .
+}
+<Translated-Eve81> { <Eve81> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:47"^^xsd:dateTime;
+                             geo:Point _:82 .
+
+                     _:82 geo:long 24.881723;
+                          geo:lat 60.15512 .
+}
+<Translated-Eve82> { <Eve82> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:51"^^xsd:dateTime;
+                             geo:Point _:83 .
+
+                     _:83 geo:long 24.87935;
+                          geo:lat 60.15831 .
+}
+<Translated-Eve83> { <Eve83> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:52"^^xsd:dateTime;
+                             geo:Point _:84 .
+
+                     _:84 geo:long 24.858385;
+                          geo:lat 60.16518 .
+}
+<Translated-Eve84> { <Eve84> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:55"^^xsd:dateTime;
+                             geo:Point _:85 .
+
+                     _:85 geo:long 24.88186;
+                          geo:lat 60.155193 .
+}
+<Translated-Eve85> { <Eve85> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:36:59"^^xsd:dateTime;
+                             geo:Point _:86 .
+
+                     _:86 geo:long 24.8794;
+                          geo:lat 60.158405 .
+}
+<Translated-Eve86> { <Eve86> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:37:00"^^xsd:dateTime;
+                             geo:Point _:87 .
+
+                     _:87 geo:long 24.858423;
+                          geo:lat 60.16508 .
+}
+<Translated-Eve87> { <Eve87> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:37:03"^^xsd:dateTime;
+                             geo:Point _:88 .
+
+                     _:88 geo:long 24.881998;
+                          geo:lat 60.15527 .
+}
+<Translated-Eve88> { <Eve88> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:37:07"^^xsd:dateTime;
+                             geo:Point _:89 .
+
+                     _:89 geo:long 24.879448;
+                          geo:lat 60.158504 .
+}
+<Translated-Eve89> { <Eve89> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:37:08"^^xsd:dateTime;
+                             geo:Point _:90 .
+
+                     _:90 geo:long 24.858461;
+                          geo:lat 60.16498 .
+}
+<Translated-Eve90> { <Eve90> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:37:11"^^xsd:dateTime;
+                             geo:Point _:91 .
+
+                     _:91 geo:long 24.882135;
+                          geo:lat 60.155342 .
+}
+<Translated-Eve91> { <Eve91> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:37:15"^^xsd:dateTime;
+                             geo:Point _:92 .
+
+                     _:92 geo:long 24.879494;
+                          geo:lat 60.1586 .
+}
+<Translated-Eve92> { <Eve92> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:37:16"^^xsd:dateTime;
+                             geo:Point _:93 .
+
+                     _:93 geo:long 24.858503;
+                          geo:lat 60.164883 .
+}
+<Translated-Eve93> { <Eve93> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:37:19"^^xsd:dateTime;
+                             geo:Point _:94 .
+
+                     _:94 geo:long 24.882273;
+                          geo:lat 60.155415 .
+}
+<Translated-Eve94> { <Eve94> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:37:23"^^xsd:dateTime;
+                             geo:Point _:95 .
+
+                     _:95 geo:long 24.87954;
+                          geo:lat 60.1587 .
+}
+<Translated-Eve95> { <Eve95> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:37:24"^^xsd:dateTime;
+                             geo:Point _:96 .
+
+                     _:96 geo:long 24.858543;
+                          geo:lat 60.164787 .
+}
+<Translated-Eve96> { <Eve96> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:37:27"^^xsd:dateTime;
+                             geo:Point _:97 .
+
+                     _:97 geo:long 24.88241;
+                          geo:lat 60.155487 .
+}
+<Translated-Eve97> { <Eve97> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:37:31"^^xsd:dateTime;
+                             geo:Point _:98 .
+
+                     _:98 geo:long 24.879581;
+                          geo:lat 60.158794 .
+}
+<Translated-Eve98> { <Eve98> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:37:32"^^xsd:dateTime;
+                             geo:Point _:99 .
+
+                     _:99 geo:long 24.858585;
+                          geo:lat 60.16469 .
+}
+<Translated-Eve99> { <Eve99> :locationName "Espoo";
+                             rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p4>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:37:35"^^xsd:dateTime;
+                             geo:Point _:100 .
+
+                     _:100 geo:long 24.882547;
+                           geo:lat 60.15556 .
+}
+<Translated-Eve100> { <Eve100> :locationName "Espoo";
+                               rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:37:39"^^xsd:dateTime;
+                               geo:Point _:101 .
+
+                      _:101 geo:long 24.879627;
+                            geo:lat 60.158894 .
+}

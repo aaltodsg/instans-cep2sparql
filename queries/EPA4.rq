@@ -1,0 +1,31 @@
+BASE <http://instans.org/>
+PREFIX : <http:instans.org/default#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX ep: <http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#>
+PREFIX omgeo: <http://www.ontotext.com/owlim/geo#>
+PREFIX ff: <http://factforge.net/>
+
+# Project (EPA 4): Delete information from the incoming events
+
+# @name EPA4-Project
+CONSTRUCT { GRAPH ?newgraph { ?s ?p ?o } }
+WHERE { GRAPH ?g { 
+    FILTER ( strStarts(str(?g),concat(str(<>),"Translated-Eve")) )
+    ?event a ep:EventObject .
+    ?s ?p ?o }
+  FILTER (?p != :locationName)
+  BIND (IRI(concat("Projected-",strAfter(str(?event),str(<>)))) AS ?newgraph) } ;
+
+# @name Cleanup-Projected
+# DELETE { GRAPH ?g1 { ?s ?p ?o } }
+# WHERE { GRAPH ?g1 {
+#     FILTER ( strStarts(str(?g1),"Projected-Eve") )
+#     ?event1 ep:hasEventObjectSamplingTime ?time1 .
+#     ?s ?p ?o }
+#   FILTER EXISTS { GRAPH ?g2 {
+#     FILTER ( strStarts(str(?g2),"Projected-Eve") )
+#     ?event2 ep:hasEventObjectSamplingTime ?time2 .
+#       FILTER (?time1 < ?time2)
+#   }  }
+# } ;

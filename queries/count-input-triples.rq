@@ -1,0 +1,14 @@
+BASE <http://instans.org/>
+PREFIX : <http:instans.org/default#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX ep: <http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#>
+PREFIX omgeo: <http://www.ontotext.com/owlim/geo#>
+PREFIX ff: <http://factforge.net/>
+
+# Auxiliary query: Count the number of events (graphs) and triples in an input file
+
+# @name Count-triples
+SELECT (COUNT(?s) as ?nr_triples)
+WHERE { GRAPH ?g { ?s ?p ?o } } ;
+

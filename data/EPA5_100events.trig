@@ -1,0 +1,1109 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE <http://instans.org/>
+PREFIX : <http:instans.org/default#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX ep: <http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#>
+PREFIX omgeo: <http://www.ontotext.com/owlim/geo#>
+PREFIX ff: <http://factforge.net/>
+<GeoEvents-Eve1> { _:4 geo:lat 60.15922;
+                       geo:long 24.876108 .
+
+                   <Eve1> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2012-03-05T13:32:28"^^xsd:dateTime;
+                          geo:Point _:4 .
+}
+<SensorEvents-Eve1> { <Eve1> rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:32:28"^^xsd:dateTime .
+}
+<GeoEvents-Eve2> { _:6 geo:lat 60.16842;
+                       geo:long 24.857418 .
+
+                   <Eve2> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2012-03-05T13:32:28"^^xsd:dateTime;
+                          geo:Point _:6 .
+}
+<SensorEvents-Eve2> { <Eve2> rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:32:28"^^xsd:dateTime .
+}
+<GeoEvents-Eve3> { _:8 geo:lat 60.15915;
+                       geo:long 24.876247 .
+
+                   <Eve3> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2012-03-05T13:32:36"^^xsd:dateTime;
+                          geo:Point _:8 .
+}
+<SensorEvents-Eve3> { <Eve3> rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:32:36"^^xsd:dateTime .
+}
+<GeoEvents-Eve4> { _:10 geo:lat 60.16832;
+                        geo:long 24.857391 .
+
+                   <Eve4> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2012-03-05T13:32:36"^^xsd:dateTime;
+                          geo:Point _:10 .
+}
+<SensorEvents-Eve4> { <Eve4> rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:32:36"^^xsd:dateTime .
+}
+<GeoEvents-Eve5> { _:12 geo:lat 60.159122;
+                        geo:long 24.876436 .
+
+                   <Eve5> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2012-03-05T13:32:44"^^xsd:dateTime;
+                          geo:Point _:12 .
+}
+<SensorEvents-Eve5> { <Eve5> rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:32:44"^^xsd:dateTime .
+}
+<GeoEvents-Eve6> { _:14 geo:lat 60.16822;
+                        geo:long 24.857367 .
+
+                   <Eve6> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2012-03-05T13:32:44"^^xsd:dateTime;
+                          geo:Point _:14 .
+}
+<SensorEvents-Eve6> { <Eve6> rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:32:44"^^xsd:dateTime .
+}
+<GeoEvents-Eve7> { _:16 geo:lat 60.1591;
+                        geo:long 24.87663 .
+
+                   <Eve7> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2012-03-05T13:32:52"^^xsd:dateTime;
+                          geo:Point _:16 .
+}
+<SensorEvents-Eve7> { <Eve7> rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:32:52"^^xsd:dateTime .
+}
+<GeoEvents-Eve8> { _:18 geo:lat 60.16812;
+                        geo:long 24.85735 .
+
+                   <Eve8> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2012-03-05T13:32:52"^^xsd:dateTime;
+                          geo:Point _:18 .
+}
+<SensorEvents-Eve8> { <Eve8> rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p2>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:32:52"^^xsd:dateTime .
+}
+<GeoEvents-Eve9> { _:20 geo:lat 60.159077;
+                        geo:long 24.876827 .
+
+                   <Eve9> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2012-03-05T13:33:00"^^xsd:dateTime;
+                          geo:Point _:20 .
+}
+<SensorEvents-Eve9> { <Eve9> rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:33:00"^^xsd:dateTime .
+}
+<GeoEvents-Eve10> { _:22 geo:lat 60.168022;
+                         geo:long 24.857332 .
+
+                    <Eve10> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:33:00"^^xsd:dateTime;
+                            geo:Point _:22 .
+}
+<SensorEvents-Eve10> { <Eve10> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:33:00"^^xsd:dateTime .
+}
+<GeoEvents-Eve11> { _:24 geo:lat 60.167923;
+                         geo:long 24.857323 .
+
+                    <Eve11> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:33:08"^^xsd:dateTime;
+                            geo:Point _:24 .
+}
+<SensorEvents-Eve11> { <Eve11> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:33:08"^^xsd:dateTime .
+}
+<GeoEvents-Eve12> { _:26 geo:lat 60.158974;
+                         geo:long 24.87682 .
+
+                    <Eve12> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:33:09"^^xsd:dateTime;
+                            geo:Point _:26 .
+}
+<SensorEvents-Eve12> { <Eve12> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:33:09"^^xsd:dateTime .
+}
+<GeoEvents-Eve13> { _:28 geo:lat 60.16782;
+                         geo:long 24.857313 .
+
+                    <Eve13> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:33:16"^^xsd:dateTime;
+                            geo:Point _:28 .
+}
+<SensorEvents-Eve13> { <Eve13> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:33:16"^^xsd:dateTime .
+}
+<GeoEvents-Eve14> { _:30 geo:lat 60.158875;
+                         geo:long 24.87679 .
+
+                    <Eve14> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:33:17"^^xsd:dateTime;
+                            geo:Point _:30 .
+}
+<SensorEvents-Eve14> { <Eve14> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:33:17"^^xsd:dateTime .
+}
+<GeoEvents-Eve15> { _:32 geo:lat 60.16772;
+                         geo:long 24.857323 .
+
+                    <Eve15> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:33:24"^^xsd:dateTime;
+                            geo:Point _:32 .
+}
+<SensorEvents-Eve15> { <Eve15> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:33:24"^^xsd:dateTime .
+}
+<GeoEvents-Eve16> { _:34 geo:lat 60.158775;
+                         geo:long 24.876755 .
+
+                    <Eve16> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:33:25"^^xsd:dateTime;
+                            geo:Point _:34 .
+}
+<SensorEvents-Eve16> { <Eve16> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:33:25"^^xsd:dateTime .
+}
+<GeoEvents-Eve17> { _:36 geo:lat 60.167625;
+                         geo:long 24.85736 .
+
+                    <Eve17> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:33:32"^^xsd:dateTime;
+                            geo:Point _:36 .
+}
+<SensorEvents-Eve17> { <Eve17> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:33:32"^^xsd:dateTime .
+}
+<GeoEvents-Eve18> { _:38 geo:lat 60.15868;
+                         geo:long 24.876719 .
+
+                    <Eve18> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:33:33"^^xsd:dateTime;
+                            geo:Point _:38 .
+}
+<SensorEvents-Eve18> { <Eve18> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:33:33"^^xsd:dateTime .
+}
+<GeoEvents-Eve19> { _:40 geo:lat 60.167526;
+                         geo:long 24.8574 .
+
+                    <Eve19> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:33:40"^^xsd:dateTime;
+                            geo:Point _:40 .
+}
+<SensorEvents-Eve19> { <Eve19> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:33:40"^^xsd:dateTime .
+}
+<GeoEvents-Eve20> { _:42 geo:lat 60.15858;
+                         geo:long 24.876684 .
+
+                    <Eve20> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:33:41"^^xsd:dateTime;
+                            geo:Point _:42 .
+}
+<SensorEvents-Eve20> { <Eve20> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:33:41"^^xsd:dateTime .
+}
+<GeoEvents-Eve21> { _:44 geo:lat 60.167427;
+                         geo:long 24.85744 .
+
+                    <Eve21> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:33:48"^^xsd:dateTime;
+                            geo:Point _:44 .
+}
+<SensorEvents-Eve21> { <Eve21> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:33:48"^^xsd:dateTime .
+}
+<GeoEvents-Eve22> { _:46 geo:lat 60.15848;
+                         geo:long 24.876648 .
+
+                    <Eve22> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:33:49"^^xsd:dateTime;
+                            geo:Point _:46 .
+}
+<SensorEvents-Eve22> { <Eve22> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:33:49"^^xsd:dateTime .
+}
+<GeoEvents-Eve23> { _:48 geo:lat 60.16733;
+                         geo:long 24.857483 .
+
+                    <Eve23> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:33:56"^^xsd:dateTime;
+                            geo:Point _:48 .
+}
+<SensorEvents-Eve23> { <Eve23> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:33:56"^^xsd:dateTime .
+}
+<GeoEvents-Eve24> { _:50 geo:lat 60.158382;
+                         geo:long 24.876612 .
+
+                    <Eve24> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:33:57"^^xsd:dateTime;
+                            geo:Point _:50 .
+}
+<SensorEvents-Eve24> { <Eve24> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:33:57"^^xsd:dateTime .
+}
+<GeoEvents-Eve25> { _:52 geo:lat 60.167233;
+                         geo:long 24.857523 .
+
+                    <Eve25> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:34:04"^^xsd:dateTime;
+                            geo:Point _:52 .
+}
+<SensorEvents-Eve25> { <Eve25> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:34:04"^^xsd:dateTime .
+}
+<GeoEvents-Eve26> { _:54 geo:lat 60.158287;
+                         geo:long 24.876575 .
+
+                    <Eve26> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:34:05"^^xsd:dateTime;
+                            geo:Point _:54 .
+}
+<SensorEvents-Eve26> { <Eve26> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:34:05"^^xsd:dateTime .
+}
+<GeoEvents-Eve27> { _:56 geo:lat 60.167133;
+                         geo:long 24.857565 .
+
+                    <Eve27> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:34:12"^^xsd:dateTime;
+                            geo:Point _:56 .
+}
+<SensorEvents-Eve27> { <Eve27> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:34:12"^^xsd:dateTime .
+}
+<GeoEvents-Eve28> { _:58 geo:lat 60.158195;
+                         geo:long 24.876654 .
+
+                    <Eve28> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:34:14"^^xsd:dateTime;
+                            geo:Point _:58 .
+}
+<SensorEvents-Eve28> { <Eve28> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:34:14"^^xsd:dateTime .
+}
+<GeoEvents-Eve29> { _:60 geo:lat 60.167038;
+                         geo:long 24.857605 .
+
+                    <Eve29> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:34:20"^^xsd:dateTime;
+                            geo:Point _:60 .
+}
+<SensorEvents-Eve29> { <Eve29> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:34:20"^^xsd:dateTime .
+}
+<GeoEvents-Eve30> { _:62 geo:lat 60.15811;
+                         geo:long 24.876764 .
+
+                    <Eve30> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:34:23"^^xsd:dateTime;
+                            geo:Point _:62 .
+}
+<SensorEvents-Eve30> { <Eve30> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:34:23"^^xsd:dateTime .
+}
+<GeoEvents-Eve31> { _:64 geo:lat 60.16694;
+                         geo:long 24.857647 .
+
+                    <Eve31> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:34:28"^^xsd:dateTime;
+                            geo:Point _:64 .
+}
+<SensorEvents-Eve31> { <Eve31> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:34:28"^^xsd:dateTime .
+}
+<GeoEvents-Eve32> { _:66 geo:lat 60.158066;
+                         geo:long 24.87694 .
+
+                    <Eve32> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:34:31"^^xsd:dateTime;
+                            geo:Point _:66 .
+}
+<SensorEvents-Eve32> { <Eve32> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:34:31"^^xsd:dateTime .
+}
+<GeoEvents-Eve33> { _:68 geo:lat 60.16684;
+                         geo:long 24.857687 .
+
+                    <Eve33> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:34:36"^^xsd:dateTime;
+                            geo:Point _:68 .
+}
+<SensorEvents-Eve33> { <Eve33> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:34:36"^^xsd:dateTime .
+}
+<GeoEvents-Eve34> { _:70 geo:lat 60.15797;
+                         geo:long 24.877 .
+
+                    <Eve34> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:34:40"^^xsd:dateTime;
+                            geo:Point _:70 .
+}
+<SensorEvents-Eve34> { <Eve34> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:34:40"^^xsd:dateTime .
+}
+<GeoEvents-Eve35> { _:72 geo:lat 60.166744;
+                         geo:long 24.857727 .
+
+                    <Eve35> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:34:44"^^xsd:dateTime;
+                            geo:Point _:72 .
+}
+<SensorEvents-Eve35> { <Eve35> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:34:44"^^xsd:dateTime .
+}
+<GeoEvents-Eve36> { _:74 geo:lat 60.154015;
+                         geo:long 24.879692 .
+
+                    <Eve36> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:34:47"^^xsd:dateTime;
+                            geo:Point _:74 .
+}
+<SensorEvents-Eve36> { <Eve36> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:34:47"^^xsd:dateTime .
+}
+<GeoEvents-Eve37> { _:76 geo:lat 60.15794;
+                         geo:long 24.877172 .
+
+                    <Eve37> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:34:48"^^xsd:dateTime;
+                            geo:Point _:76 .
+}
+<SensorEvents-Eve37> { <Eve37> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:34:48"^^xsd:dateTime .
+}
+<GeoEvents-Eve38> { _:78 geo:lat 60.166645;
+                         geo:long 24.857767 .
+
+                    <Eve38> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:34:52"^^xsd:dateTime;
+                            geo:Point _:78 .
+}
+<SensorEvents-Eve38> { <Eve38> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:34:52"^^xsd:dateTime .
+}
+<GeoEvents-Eve39> { _:80 geo:lat 60.15409;
+                         geo:long 24.87983 .
+
+                    <Eve39> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:34:55"^^xsd:dateTime;
+                            geo:Point _:80 .
+}
+<SensorEvents-Eve39> { <Eve39> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:34:55"^^xsd:dateTime .
+}
+<GeoEvents-Eve40> { _:82 geo:lat 60.15792;
+                         geo:long 24.877369 .
+
+                    <Eve40> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:34:56"^^xsd:dateTime;
+                            geo:Point _:82 .
+}
+<SensorEvents-Eve40> { <Eve40> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:34:56"^^xsd:dateTime .
+}
+<GeoEvents-Eve41> { _:84 geo:lat 60.166546;
+                         geo:long 24.857807 .
+
+                    <Eve41> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:00"^^xsd:dateTime;
+                            geo:Point _:84 .
+}
+<SensorEvents-Eve41> { <Eve41> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:00"^^xsd:dateTime .
+}
+<GeoEvents-Eve42> { _:86 geo:lat 60.154163;
+                         geo:long 24.879965 .
+
+                    <Eve42> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:03"^^xsd:dateTime;
+                            geo:Point _:86 .
+}
+<SensorEvents-Eve42> { <Eve42> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:03"^^xsd:dateTime .
+}
+<GeoEvents-Eve43> { _:88 geo:lat 60.1579;
+                         geo:long 24.877565 .
+
+                    <Eve43> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:04"^^xsd:dateTime;
+                            geo:Point _:88 .
+}
+<SensorEvents-Eve43> { <Eve43> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:04"^^xsd:dateTime .
+}
+<GeoEvents-Eve44> { _:90 geo:lat 60.16645;
+                         geo:long 24.85785 .
+
+                    <Eve44> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:08"^^xsd:dateTime;
+                            geo:Point _:90 .
+}
+<SensorEvents-Eve44> { <Eve44> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:08"^^xsd:dateTime .
+}
+<GeoEvents-Eve45> { _:92 geo:lat 60.154236;
+                         geo:long 24.8801 .
+
+                    <Eve45> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:11"^^xsd:dateTime;
+                            geo:Point _:92 .
+}
+<SensorEvents-Eve45> { <Eve45> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:11"^^xsd:dateTime .
+}
+<GeoEvents-Eve46> { _:94 geo:lat 60.15788;
+                         geo:long 24.877762 .
+
+                    <Eve46> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:12"^^xsd:dateTime;
+                            geo:Point _:94 .
+}
+<SensorEvents-Eve46> { <Eve46> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:12"^^xsd:dateTime .
+}
+<GeoEvents-Eve47> { _:96 geo:lat 60.16635;
+                         geo:long 24.85789 .
+
+                    <Eve47> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:16"^^xsd:dateTime;
+                            geo:Point _:96 .
+}
+<SensorEvents-Eve47> { <Eve47> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:16"^^xsd:dateTime .
+}
+<GeoEvents-Eve48> { _:98 geo:lat 60.15431;
+                         geo:long 24.880236 .
+
+                    <Eve48> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:19"^^xsd:dateTime;
+                            geo:Point _:98 .
+}
+<SensorEvents-Eve48> { <Eve48> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:19"^^xsd:dateTime .
+}
+<GeoEvents-Eve49> { _:100 geo:lat 60.15786;
+                          geo:long 24.877958 .
+
+                    <Eve49> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:20"^^xsd:dateTime;
+                            geo:Point _:100 .
+}
+<SensorEvents-Eve49> { <Eve49> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:20"^^xsd:dateTime .
+}
+<GeoEvents-Eve50> { _:102 geo:lat 60.166256;
+                          geo:long 24.857931 .
+
+                    <Eve50> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:24"^^xsd:dateTime;
+                            geo:Point _:102 .
+}
+<SensorEvents-Eve50> { <Eve50> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:24"^^xsd:dateTime .
+}
+<GeoEvents-Eve51> { _:104 geo:lat 60.154385;
+                          geo:long 24.880371 .
+
+                    <Eve51> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:27"^^xsd:dateTime;
+                            geo:Point _:104 .
+}
+<SensorEvents-Eve51> { <Eve51> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:27"^^xsd:dateTime .
+}
+<GeoEvents-Eve52> { _:106 geo:lat 60.157837;
+                          geo:long 24.878155 .
+
+                    <Eve52> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:28"^^xsd:dateTime;
+                            geo:Point _:106 .
+}
+<SensorEvents-Eve52> { <Eve52> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:28"^^xsd:dateTime .
+}
+<GeoEvents-Eve53> { _:108 geo:lat 60.166157;
+                          geo:long 24.857973 .
+
+                    <Eve53> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:32"^^xsd:dateTime;
+                            geo:Point _:108 .
+}
+<SensorEvents-Eve53> { <Eve53> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:32"^^xsd:dateTime .
+}
+<GeoEvents-Eve54> { _:110 geo:lat 60.154457;
+                          geo:long 24.880507 .
+
+                    <Eve54> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:35"^^xsd:dateTime;
+                            geo:Point _:110 .
+}
+<SensorEvents-Eve54> { <Eve54> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:35"^^xsd:dateTime .
+}
+<GeoEvents-Eve55> { _:112 geo:lat 60.157818;
+                          geo:long 24.878351 .
+
+                    <Eve55> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:36"^^xsd:dateTime;
+                            geo:Point _:112 .
+}
+<SensorEvents-Eve55> { <Eve55> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:36"^^xsd:dateTime .
+}
+<GeoEvents-Eve56> { _:114 geo:lat 60.166058;
+                          geo:long 24.858015 .
+
+                    <Eve56> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:40"^^xsd:dateTime;
+                            geo:Point _:114 .
+}
+<SensorEvents-Eve56> { <Eve56> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:40"^^xsd:dateTime .
+}
+<GeoEvents-Eve57> { _:116 geo:lat 60.15453;
+                          geo:long 24.880642 .
+
+                    <Eve57> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:43"^^xsd:dateTime;
+                            geo:Point _:116 .
+}
+<SensorEvents-Eve57> { <Eve57> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:43"^^xsd:dateTime .
+}
+<GeoEvents-Eve58> { _:118 geo:lat 60.1578;
+                          geo:long 24.878548 .
+
+                    <Eve58> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:44"^^xsd:dateTime;
+                            geo:Point _:118 .
+}
+<SensorEvents-Eve58> { <Eve58> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:44"^^xsd:dateTime .
+}
+<GeoEvents-Eve59> { _:120 geo:lat 60.165962;
+                          geo:long 24.858057 .
+
+                    <Eve59> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:48"^^xsd:dateTime;
+                            geo:Point _:120 .
+}
+<SensorEvents-Eve59> { <Eve59> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:48"^^xsd:dateTime .
+}
+<GeoEvents-Eve60> { _:122 geo:lat 60.154606;
+                          geo:long 24.880777 .
+
+                    <Eve60> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:51"^^xsd:dateTime;
+                            geo:Point _:122 .
+}
+<SensorEvents-Eve60> { <Eve60> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:51"^^xsd:dateTime .
+}
+<GeoEvents-Eve61> { _:124 geo:lat 60.157776;
+                          geo:long 24.878744 .
+
+                    <Eve61> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:52"^^xsd:dateTime;
+                            geo:Point _:124 .
+}
+<SensorEvents-Eve61> { <Eve61> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:52"^^xsd:dateTime .
+}
+<GeoEvents-Eve62> { _:126 geo:lat 60.165863;
+                          geo:long 24.858099 .
+
+                    <Eve62> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:56"^^xsd:dateTime;
+                            geo:Point _:126 .
+}
+<SensorEvents-Eve62> { <Eve62> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:56"^^xsd:dateTime .
+}
+<GeoEvents-Eve63> { _:128 geo:lat 60.15468;
+                          geo:long 24.880913 .
+
+                    <Eve63> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:35:59"^^xsd:dateTime;
+                            geo:Point _:128 .
+}
+<SensorEvents-Eve63> { <Eve63> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:35:59"^^xsd:dateTime .
+}
+<GeoEvents-Eve64> { _:130 geo:lat 60.157757;
+                          geo:long 24.87894 .
+
+                    <Eve64> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:00"^^xsd:dateTime;
+                            geo:Point _:130 .
+}
+<SensorEvents-Eve64> { <Eve64> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:00"^^xsd:dateTime .
+}
+<GeoEvents-Eve65> { _:132 geo:lat 60.165764;
+                          geo:long 24.85814 .
+
+                    <Eve65> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:04"^^xsd:dateTime;
+                            geo:Point _:132 .
+}
+<SensorEvents-Eve65> { <Eve65> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:04"^^xsd:dateTime .
+}
+<GeoEvents-Eve66> { _:134 geo:lat 60.154755;
+                          geo:long 24.881048 .
+
+                    <Eve66> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:07"^^xsd:dateTime;
+                            geo:Point _:134 .
+}
+<SensorEvents-Eve66> { <Eve66> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:07"^^xsd:dateTime .
+}
+<GeoEvents-Eve67> { _:136 geo:lat 60.157837;
+                          geo:long 24.87904 .
+
+                    <Eve67> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:09"^^xsd:dateTime;
+                            geo:Point _:136 .
+}
+<SensorEvents-Eve67> { <Eve67> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:09"^^xsd:dateTime .
+}
+<GeoEvents-Eve68> { _:138 geo:lat 60.16567;
+                          geo:long 24.858183 .
+
+                    <Eve68> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:12"^^xsd:dateTime;
+                            geo:Point _:138 .
+}
+<SensorEvents-Eve68> { <Eve68> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:12"^^xsd:dateTime .
+}
+<GeoEvents-Eve69> { _:140 geo:lat 60.154827;
+                          geo:long 24.881184 .
+
+                    <Eve69> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:15"^^xsd:dateTime;
+                            geo:Point _:140 .
+}
+<SensorEvents-Eve69> { <Eve69> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:15"^^xsd:dateTime .
+}
+<GeoEvents-Eve70> { _:142 geo:lat 60.157932;
+                          geo:long 24.879097 .
+
+                    <Eve70> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:17"^^xsd:dateTime;
+                            geo:Point _:142 .
+}
+<SensorEvents-Eve70> { <Eve70> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:17"^^xsd:dateTime .
+}
+<GeoEvents-Eve71> { _:144 geo:lat 60.16557;
+                          geo:long 24.858225 .
+
+                    <Eve71> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:20"^^xsd:dateTime;
+                            geo:Point _:144 .
+}
+<SensorEvents-Eve71> { <Eve71> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:20"^^xsd:dateTime .
+}
+<GeoEvents-Eve72> { _:146 geo:lat 60.1549;
+                          geo:long 24.881319 .
+
+                    <Eve72> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:23"^^xsd:dateTime;
+                            geo:Point _:146 .
+}
+<SensorEvents-Eve72> { <Eve72> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:23"^^xsd:dateTime .
+}
+<GeoEvents-Eve73> { _:148 geo:lat 60.158016;
+                          geo:long 24.879206 .
+
+                    <Eve73> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:27"^^xsd:dateTime;
+                            geo:Point _:148 .
+}
+<SensorEvents-Eve73> { <Eve73> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:27"^^xsd:dateTime .
+}
+<GeoEvents-Eve74> { _:150 geo:lat 60.165474;
+                          geo:long 24.858265 .
+
+                    <Eve74> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:28"^^xsd:dateTime;
+                            geo:Point _:150 .
+}
+<SensorEvents-Eve74> { <Eve74> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:28"^^xsd:dateTime .
+}
+<GeoEvents-Eve75> { _:152 geo:lat 60.154976;
+                          geo:long 24.88145 .
+
+                    <Eve75> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:31"^^xsd:dateTime;
+                            geo:Point _:152 .
+}
+<SensorEvents-Eve75> { <Eve75> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:31"^^xsd:dateTime .
+}
+<GeoEvents-Eve76> { _:154 geo:lat 60.158115;
+                          geo:long 24.879253 .
+
+                    <Eve76> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:35"^^xsd:dateTime;
+                            geo:Point _:154 .
+}
+<SensorEvents-Eve76> { <Eve76> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:35"^^xsd:dateTime .
+}
+<GeoEvents-Eve77> { _:156 geo:lat 60.165375;
+                          geo:long 24.858307 .
+
+                    <Eve77> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:36"^^xsd:dateTime;
+                            geo:Point _:156 .
+}
+<SensorEvents-Eve77> { <Eve77> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:36"^^xsd:dateTime .
+}
+<GeoEvents-Eve78> { _:158 geo:lat 60.15505;
+                          geo:long 24.881586 .
+
+                    <Eve78> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:39"^^xsd:dateTime;
+                            geo:Point _:158 .
+}
+<SensorEvents-Eve78> { <Eve78> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:39"^^xsd:dateTime .
+}
+<GeoEvents-Eve79> { _:160 geo:lat 60.15821;
+                          geo:long 24.879303 .
+
+                    <Eve79> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:43"^^xsd:dateTime;
+                            geo:Point _:160 .
+}
+<SensorEvents-Eve79> { <Eve79> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:43"^^xsd:dateTime .
+}
+<GeoEvents-Eve80> { _:162 geo:lat 60.165276;
+                          geo:long 24.858347 .
+
+                    <Eve80> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:44"^^xsd:dateTime;
+                            geo:Point _:162 .
+}
+<SensorEvents-Eve80> { <Eve80> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:44"^^xsd:dateTime .
+}
+<GeoEvents-Eve81> { _:164 geo:lat 60.15512;
+                          geo:long 24.881723 .
+
+                    <Eve81> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:47"^^xsd:dateTime;
+                            geo:Point _:164 .
+}
+<SensorEvents-Eve81> { <Eve81> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:47"^^xsd:dateTime .
+}
+<GeoEvents-Eve82> { _:166 geo:lat 60.15831;
+                          geo:long 24.87935 .
+
+                    <Eve82> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:51"^^xsd:dateTime;
+                            geo:Point _:166 .
+}
+<SensorEvents-Eve82> { <Eve82> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:51"^^xsd:dateTime .
+}
+<GeoEvents-Eve83> { _:168 geo:lat 60.16518;
+                          geo:long 24.858385 .
+
+                    <Eve83> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:52"^^xsd:dateTime;
+                            geo:Point _:168 .
+}
+<SensorEvents-Eve83> { <Eve83> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:52"^^xsd:dateTime .
+}
+<GeoEvents-Eve84> { _:170 geo:lat 60.155193;
+                          geo:long 24.88186 .
+
+                    <Eve84> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:55"^^xsd:dateTime;
+                            geo:Point _:170 .
+}
+<SensorEvents-Eve84> { <Eve84> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:55"^^xsd:dateTime .
+}
+<GeoEvents-Eve85> { _:172 geo:lat 60.158405;
+                          geo:long 24.8794 .
+
+                    <Eve85> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:36:59"^^xsd:dateTime;
+                            geo:Point _:172 .
+}
+<SensorEvents-Eve85> { <Eve85> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:36:59"^^xsd:dateTime .
+}
+<GeoEvents-Eve86> { _:174 geo:lat 60.16508;
+                          geo:long 24.858423 .
+
+                    <Eve86> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:37:00"^^xsd:dateTime;
+                            geo:Point _:174 .
+}
+<SensorEvents-Eve86> { <Eve86> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:37:00"^^xsd:dateTime .
+}
+<GeoEvents-Eve87> { _:176 geo:lat 60.15527;
+                          geo:long 24.881998 .
+
+                    <Eve87> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:37:03"^^xsd:dateTime;
+                            geo:Point _:176 .
+}
+<SensorEvents-Eve87> { <Eve87> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:37:03"^^xsd:dateTime .
+}
+<GeoEvents-Eve88> { _:178 geo:lat 60.158504;
+                          geo:long 24.879448 .
+
+                    <Eve88> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:37:07"^^xsd:dateTime;
+                            geo:Point _:178 .
+}
+<SensorEvents-Eve88> { <Eve88> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:37:07"^^xsd:dateTime .
+}
+<GeoEvents-Eve89> { _:180 geo:lat 60.16498;
+                          geo:long 24.858461 .
+
+                    <Eve89> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:37:08"^^xsd:dateTime;
+                            geo:Point _:180 .
+}
+<SensorEvents-Eve89> { <Eve89> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:37:08"^^xsd:dateTime .
+}
+<GeoEvents-Eve90> { _:182 geo:lat 60.155342;
+                          geo:long 24.882135 .
+
+                    <Eve90> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:37:11"^^xsd:dateTime;
+                            geo:Point _:182 .
+}
+<SensorEvents-Eve90> { <Eve90> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:37:11"^^xsd:dateTime .
+}
+<GeoEvents-Eve91> { _:184 geo:lat 60.1586;
+                          geo:long 24.879494 .
+
+                    <Eve91> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:37:15"^^xsd:dateTime;
+                            geo:Point _:184 .
+}
+<SensorEvents-Eve91> { <Eve91> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:37:15"^^xsd:dateTime .
+}
+<GeoEvents-Eve92> { _:186 geo:lat 60.164883;
+                          geo:long 24.858503 .
+
+                    <Eve92> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:37:16"^^xsd:dateTime;
+                            geo:Point _:186 .
+}
+<SensorEvents-Eve92> { <Eve92> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:37:16"^^xsd:dateTime .
+}
+<GeoEvents-Eve93> { _:188 geo:lat 60.155415;
+                          geo:long 24.882273 .
+
+                    <Eve93> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:37:19"^^xsd:dateTime;
+                            geo:Point _:188 .
+}
+<SensorEvents-Eve93> { <Eve93> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:37:19"^^xsd:dateTime .
+}
+<GeoEvents-Eve94> { _:190 geo:lat 60.1587;
+                          geo:long 24.87954 .
+
+                    <Eve94> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:37:23"^^xsd:dateTime;
+                            geo:Point _:190 .
+}
+<SensorEvents-Eve94> { <Eve94> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:37:23"^^xsd:dateTime .
+}
+<GeoEvents-Eve95> { _:192 geo:lat 60.164787;
+                          geo:long 24.858543 .
+
+                    <Eve95> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:37:24"^^xsd:dateTime;
+                            geo:Point _:192 .
+}
+<SensorEvents-Eve95> { <Eve95> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:37:24"^^xsd:dateTime .
+}
+<GeoEvents-Eve96> { _:194 geo:lat 60.155487;
+                          geo:long 24.88241 .
+
+                    <Eve96> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:37:27"^^xsd:dateTime;
+                            geo:Point _:194 .
+}
+<SensorEvents-Eve96> { <Eve96> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:37:27"^^xsd:dateTime .
+}
+<GeoEvents-Eve97> { _:196 geo:lat 60.158794;
+                          geo:long 24.879581 .
+
+                    <Eve97> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:37:31"^^xsd:dateTime;
+                            geo:Point _:196 .
+}
+<SensorEvents-Eve97> { <Eve97> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p1>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:37:31"^^xsd:dateTime .
+}
+<GeoEvents-Eve98> { _:198 geo:lat 60.16469;
+                          geo:long 24.858585 .
+
+                    <Eve98> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:37:32"^^xsd:dateTime;
+                            geo:Point _:198 .
+}
+<SensorEvents-Eve98> { <Eve98> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p2>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:37:32"^^xsd:dateTime .
+}
+<GeoEvents-Eve99> { _:200 geo:lat 60.15556;
+                          geo:long 24.882547 .
+
+                    <Eve99> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2012-03-05T13:37:35"^^xsd:dateTime;
+                            geo:Point _:200 .
+}
+<SensorEvents-Eve99> { <Eve99> rdf:type ep:EventObject;
+                               ssn:Sensor <http://#p4>;
+                               ep:hasEventObjectSamplingTime "2012-03-05T13:37:35"^^xsd:dateTime .
+}
+<GeoEvents-Eve100> { _:202 geo:lat 60.158894;
+                           geo:long 24.879627 .
+
+                     <Eve100> rdf:type ep:EventObject;
+                              ep:hasEventObjectSamplingTime "2012-03-05T13:37:39"^^xsd:dateTime;
+                              geo:Point _:202 .
+}
+<SensorEvents-Eve100> { <Eve100> rdf:type ep:EventObject;
+                                 ssn:Sensor <http://#p1>;
+                                 ep:hasEventObjectSamplingTime "2012-03-05T13:37:39"^^xsd:dateTime .
+}

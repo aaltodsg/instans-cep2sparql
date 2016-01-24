@@ -17,25 +17,31 @@ Conference on Ontologies, DataBases, and Applications of Semantics
 * [Paper](http://www.cs.hut.fi/~mjrinne/papers/odbase2014/Constructing%20Event%20Processing%20Systems%20of%20Layered%20and%20Heterogeneous%20Events%20with%20SPARQL%20%28annotated%20author%20copy%29.pdf)
 * [Presentation](http://www.cs.hut.fi/~mjrinne/papers/odbase2014/Constructing%20Event%20Processing%20Systems%20with%20SPARQL.pdf)
 
-The command line to run the example is in the one-line shell script "cep2sparql.sh":
+A quick test is included in the one-line shell script "cep2sparql.sh":
 
 $ ./cep2sparql.sh
 
-The example does not run a remote service query in EPA 3, but uses a
-fixed local binding instead.
+This example runs a combination of all the 8 types of event processing
+agents introduced in the paper. A sample output for comparison is
+available in _sample-output/cep2sparql\_output.txt_ .
 
-The following files are involved:
-* _queries/EPA-All.rq:_ SPARQL implementation of eight types of event processing agents (EPA), interconnected.
-* _cep2sparql.sh:_ The command line to run a verbose version with a small
-number of test events.
-* _queries/construct-event-output.rq:_ An auxiliary SPARQL query to CONSTRUCT
-output of events passing between different EPAs.
-* _input/CEP2SPARQL_SampleEvents.trig:_ The sample events in TriG format.
-* _input/CEP2SPARQL_SamplePattern.trig:_ A sample pattern for pattern detection
-(EPA 8) in TriG format.
-* _sample-output/running\_sample.txt:_ Sample output produced by running
-  _cep2sparql.sh_. The format is otherwise TriG, but since it also
-  includes the execution timer outputs - which are not
-  TriG-compliant - it is listed here as .txt.
+The `scripts` directory contains the following batch files, which
+serve also as command line parameter reference for individual trials:
+
+* `batch_test.sh` runs the sample events through each type of EPA separately
+  as well as the EPA-All combination. Sample results in
+  _sample-output/batch\_test\_output.txt_ . Please note that this
+  batch also runs EPA3 over the remote SERVICE request, other batches
+  only use a local BIND.
+* `batch_run.sh` runs 1000 events through each type of EPA separately
+  as well as the EPA-All combination. Sample results in
+  _sample-output/batch\_run\_output.txt_ .
+* `batch_speed.sh` measures the execution speed of each EPA separately
+  as well as the EPA-All combination for 1, 100, 1000 and 10000
+  events. Sample results executed on our platform in
+  _sample-output/batch\_speed\_results.txt_ . Comparison results using
+  explicit cleanup-queries in EPAs 1-5 are in _sample-output/batch\_speed\_cleanup\_results.txt_ .
+
+Formatted results can be found in the _results_ folder.
 
 [1] Etzion, Luckham, Niblett: Event Processing in Action. Manning Publications (Jul 2010)

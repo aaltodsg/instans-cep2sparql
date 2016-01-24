@@ -1,0 +1,1 @@
+$INSTANS_HOME/bin/instans --prefix-encoding=true -r ../queries/EPA7.rq --allow-rule-instance-removal=false --rdf-operations=add:execute-snapshot:flush --time=- --input-blocks=../data/EPA5_SampleEvents.trig

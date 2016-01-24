@@ -1,0 +1,1 @@
+$INSTANS_HOME/bin/instans --prefix-encoding=true --construct-output-trig=/dev/null -r ../queries/$1 --input-blocks=../data/CEP2SPARQL_SamplePattern.trig --allow-rule-instance-removal=false --rdf-operations=add:execute-snapshot:remove:execute:flush --time=- --input-blocks=../data/$2

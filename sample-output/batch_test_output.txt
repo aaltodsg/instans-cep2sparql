@@ -1,0 +1,1154 @@
+
+
+
+EPA1 (Stateless filter)
+
+At 0.000016: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE <http://instans.org/>
+PREFIX : <http:instans.org/default#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX ep: <http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#>
+PREFIX omgeo: <http://www.ontotext.com/owlim/geo#>
+PREFIX ff: <http://factforge.net/>
+<Poststateless-Eve1> { <Eve1> geo:Point _:2;
+                              ssn:Sensor :loc1;
+                              rdf:type ep:EventObject;
+                              ep:hasEventObjectSamplingTime "2014-01-07T09:18:21"^^xsd:dateTime .
+
+                       _:2 geo:long 24.88149;
+                           geo:lat 60.158775 .
+}
+<Poststateless-Eve2> { <Eve2> geo:Point _:3;
+                              ssn:Sensor :loc1;
+                              rdf:type ep:EventObject;
+                              ep:hasEventObjectSamplingTime "2014-01-07T09:42:00"^^xsd:dateTime .
+
+                       _:3 geo:long 24.821272;
+                           geo:lat 60.187458 .
+}
+<Poststateless-Eve3> { <Eve3> geo:Point _:4;
+                              ssn:Sensor :loc1;
+                              rdf:type ep:EventObject;
+                              ep:hasEventObjectSamplingTime "2014-01-07T10:18:21"^^xsd:dateTime .
+
+                       _:4 geo:long 24.821491;
+                           geo:lat 60.187634 .
+}
+<Poststateless-Eve4> { <Eve4> geo:Point _:5;
+                              ssn:Sensor :loc1;
+                              rdf:type ep:EventObject;
+                              ep:hasEventObjectSamplingTime "2014-01-07T11:32:34"^^xsd:dateTime .
+
+                       _:5 geo:long 24.821255;
+                           geo:lat 60.187595 .
+}
+<Poststateless-Eve7> { <Eve7> geo:Point _:8;
+                              ssn:Sensor :loc1;
+                              rdf:type ep:EventObject;
+                              ep:hasEventObjectSamplingTime "2014-01-08T09:18:21"^^xsd:dateTime .
+
+                       _:8 geo:long 24.88149;
+                           geo:lat 60.158775 .
+}
+<Poststateless-Eve8> { <Eve8> geo:Point _:9;
+                              ssn:Sensor :loc1;
+                              rdf:type ep:EventObject;
+                              ep:hasEventObjectSamplingTime "2014-01-08T09:42:00"^^xsd:dateTime .
+
+                       _:9 geo:long 24.821272;
+                           geo:lat 60.187458 .
+}
+<Poststateless-Eve9> { <Eve9> geo:Point _:10;
+                              ssn:Sensor :loc1;
+                              rdf:type ep:EventObject;
+                              ep:hasEventObjectSamplingTime "2014-01-08T10:18:21"^^xsd:dateTime .
+
+                       _:10 geo:long 24.821491;
+                            geo:lat 60.187634 .
+}
+<Poststateless-Eve10> { <Eve10> geo:Point _:11;
+                                ssn:Sensor :loc1;
+                                rdf:type ep:EventObject;
+                                ep:hasEventObjectSamplingTime "2014-01-08T11:32:34"^^xsd:dateTime .
+
+                        _:11 geo:long 24.821255;
+                             geo:lat 60.187595 .
+}
+
+At 0.070387: Done
+
+
+
+EPA2 (Stateful filter)
+
+At 0.000016: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE <http://instans.org/>
+PREFIX : <http:instans.org/default#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX ep: <http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#>
+PREFIX omgeo: <http://www.ontotext.com/owlim/geo#>
+PREFIX ff: <http://factforge.net/>
+<Poststateful-Eve1> { <Eve1> ep:hasEventObjectSamplingTime "2014-01-07T09:18:21"^^xsd:dateTime;
+                             rdf:type ep:EventObject;
+                             ssn:Sensor :loc1;
+                             geo:Point _:4 .
+
+                      _:4 geo:lat 60.158775;
+                          geo:long 24.88149 .
+}
+<Poststateful-Eve3> { <Eve3> ep:hasEventObjectSamplingTime "2014-01-07T10:18:21"^^xsd:dateTime;
+                             rdf:type ep:EventObject;
+                             ssn:Sensor :loc1;
+                             geo:Point _:6 .
+
+                      _:6 geo:lat 60.187634;
+                          geo:long 24.821491 .
+}
+<Poststateful-Eve4> { <Eve4> ep:hasEventObjectSamplingTime "2014-01-07T11:32:34"^^xsd:dateTime;
+                             rdf:type ep:EventObject;
+                             ssn:Sensor :loc1;
+                             geo:Point _:7 .
+
+                      _:7 geo:lat 60.187595;
+                          geo:long 24.821255 .
+}
+<Poststateful-Eve5> { <Eve5> ep:hasEventObjectSamplingTime "2014-01-07T21:12:32"^^xsd:dateTime;
+                             rdf:type ep:EventObject;
+                             ssn:Sensor :loc1;
+                             geo:Point _:8 .
+
+                      _:8 geo:lat 60.187595;
+                          geo:long 24.821255 .
+}
+<Poststateful-Eve6> { <Eve6> ep:hasEventObjectSamplingTime "2014-01-08T04:02:11"^^xsd:dateTime;
+                             rdf:type ep:EventObject;
+                             ssn:Sensor :loc1;
+                             geo:Point _:9 .
+
+                      _:9 geo:lat 60.186623;
+                          geo:long 24.820017 .
+}
+<Poststateful-Eve7> { <Eve7> ep:hasEventObjectSamplingTime "2014-01-08T09:18:21"^^xsd:dateTime;
+                             rdf:type ep:EventObject;
+                             ssn:Sensor :loc1;
+                             geo:Point _:10 .
+
+                      _:10 geo:lat 60.158775;
+                           geo:long 24.88149 .
+}
+<Poststateful-Eve9> { <Eve9> ep:hasEventObjectSamplingTime "2014-01-08T10:18:21"^^xsd:dateTime;
+                             rdf:type ep:EventObject;
+                             ssn:Sensor :loc1;
+                             geo:Point _:12 .
+
+                      _:12 geo:lat 60.187634;
+                           geo:long 24.821491 .
+}
+<Poststateful-Eve10> { <Eve10> ep:hasEventObjectSamplingTime "2014-01-08T11:32:34"^^xsd:dateTime;
+                               rdf:type ep:EventObject;
+                               ssn:Sensor :loc1;
+                               geo:Point _:13 .
+
+                       _:13 geo:lat 60.187595;
+                            geo:long 24.821255 .
+}
+<Poststateful-Eve11> { <Eve11> ep:hasEventObjectSamplingTime "2014-01-08T21:12:32"^^xsd:dateTime;
+                               rdf:type ep:EventObject;
+                               ssn:Sensor :loc1;
+                               geo:Point _:14 .
+
+                       _:14 geo:lat 60.187595;
+                            geo:long 24.821255 .
+}
+<Poststateful-Eve12> { <Eve12> ep:hasEventObjectSamplingTime "2014-01-09T04:02:11"^^xsd:dateTime;
+                               rdf:type ep:EventObject;
+                               ssn:Sensor :loc1;
+                               geo:Point _:15 .
+
+                       _:15 geo:lat 60.186623;
+                            geo:long 24.820017 .
+}
+
+At 0.069447: Done
+
+
+
+EPA3 (Enrich) local
+
+At 0.000014: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE <http://instans.org/>
+PREFIX : <http:instans.org/default#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX ep: <http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#>
+PREFIX omgeo: <http://www.ontotext.com/owlim/geo#>
+PREFIX ff: <http://factforge.net/>
+<Translated-Eve1> { <Eve1> :locationName "Espoo";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:2;
+                           ep:hasEventObjectSamplingTime "2014-01-07T09:18:21"^^xsd:dateTime .
+
+                    _:2 geo:lat 60.158775;
+                        geo:long 24.88149 .
+}
+<Translated-Eve2> { <Eve2> :locationName "Espoo";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:3;
+                           ep:hasEventObjectSamplingTime "2014-01-07T09:42:00"^^xsd:dateTime .
+
+                    _:3 geo:lat 60.187458;
+                        geo:long 24.821272 .
+}
+<Translated-Eve3> { <Eve3> :locationName "Espoo";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:4;
+                           ep:hasEventObjectSamplingTime "2014-01-07T10:18:21"^^xsd:dateTime .
+
+                    _:4 geo:lat 60.187634;
+                        geo:long 24.821491 .
+}
+<Translated-Eve4> { <Eve4> :locationName "Espoo";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:5;
+                           ep:hasEventObjectSamplingTime "2014-01-07T11:32:34"^^xsd:dateTime .
+
+                    _:5 geo:lat 60.187595;
+                        geo:long 24.821255 .
+}
+<Translated-Eve5> { <Eve5> :locationName "Espoo";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:6;
+                           ep:hasEventObjectSamplingTime "2014-01-07T21:12:32"^^xsd:dateTime .
+
+                    _:6 geo:lat 60.187595;
+                        geo:long 24.821255 .
+}
+<Translated-Eve6> { <Eve6> :locationName "Espoo";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:7;
+                           ep:hasEventObjectSamplingTime "2014-01-08T04:02:11"^^xsd:dateTime .
+
+                    _:7 geo:lat 60.186623;
+                        geo:long 24.820017 .
+}
+<Translated-Eve7> { <Eve7> :locationName "Espoo";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:8;
+                           ep:hasEventObjectSamplingTime "2014-01-08T09:18:21"^^xsd:dateTime .
+
+                    _:8 geo:lat 60.158775;
+                        geo:long 24.88149 .
+}
+<Translated-Eve8> { <Eve8> :locationName "Espoo";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:9;
+                           ep:hasEventObjectSamplingTime "2014-01-08T09:42:00"^^xsd:dateTime .
+
+                    _:9 geo:lat 60.187458;
+                        geo:long 24.821272 .
+}
+<Translated-Eve9> { <Eve9> :locationName "Espoo";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:10;
+                           ep:hasEventObjectSamplingTime "2014-01-08T10:18:21"^^xsd:dateTime .
+
+                    _:10 geo:lat 60.187634;
+                         geo:long 24.821491 .
+}
+<Translated-Eve10> { <Eve10> :locationName "Espoo";
+                             ssn:Sensor :loc1;
+                             rdf:type ep:EventObject;
+                             geo:Point _:11;
+                             ep:hasEventObjectSamplingTime "2014-01-08T11:32:34"^^xsd:dateTime .
+
+                     _:11 geo:lat 60.187595;
+                          geo:long 24.821255 .
+}
+<Translated-Eve11> { <Eve11> :locationName "Espoo";
+                             ssn:Sensor :loc1;
+                             rdf:type ep:EventObject;
+                             geo:Point _:12;
+                             ep:hasEventObjectSamplingTime "2014-01-08T21:12:32"^^xsd:dateTime .
+
+                     _:12 geo:lat 60.187595;
+                          geo:long 24.821255 .
+}
+<Translated-Eve12> { <Eve12> :locationName "Espoo";
+                             ssn:Sensor :loc1;
+                             rdf:type ep:EventObject;
+                             geo:Point _:13;
+                             ep:hasEventObjectSamplingTime "2014-01-09T04:02:11"^^xsd:dateTime .
+
+                     _:13 geo:lat 60.186623;
+                          geo:long 24.820017 .
+}
+
+At 0.069351: Done
+
+
+
+EPA3 (Enrich) remote service
+
+At 0.000016: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE <http://instans.org/>
+PREFIX : <http:instans.org/default#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX ep: <http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#>
+PREFIX omgeo: <http://www.ontotext.com/owlim/geo#>
+PREFIX ff: <http://factforge.net/>
+<Translated-Eve1> { <Eve1> :locationName "Lauttasaari";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:2;
+                           ep:hasEventObjectSamplingTime "2014-01-07T09:18:21"^^xsd:dateTime .
+
+                    _:2 geo:lat 60.158775;
+                        geo:long 24.88149 .
+}
+<Translated-Eve2> { <Eve2> :locationName "Aalto University",
+                                        "Aalto University School of Science and Technology",
+                                        "Otaniemi",
+                                        "Innopoli",
+                                        "Teknologföreningen",
+                                        "Dipoli",
+                                        "Aalto Design Factory",
+                                        "Tuas-talo",
+                                        "Main building, Aalto University",
+                                        "Maarintalo",
+                                        "Otaranta",
+                                        "Technopolis Innopoli",
+                                        "Teknillisen Korkeakoulun kirjasto",
+                                        "Otahalli",
+                                        "Aalto, Main Building",
+                                        "Gentti, Aalto Yliopisto",
+                                        "Yths Health Center",
+                                        "Teekkarikylä",
+                                        "Maarinlahti",
+                                        "Radisson SAS Hotel Espoo";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:3;
+                           ep:hasEventObjectSamplingTime "2014-01-07T09:42:00"^^xsd:dateTime .
+
+                    _:3 geo:lat 60.187458;
+                        geo:long 24.821272 .
+}
+<Translated-Eve3> { <Eve3> :locationName "Aalto University",
+                                        "Aalto University School of Science and Technology",
+                                        "Otaniemi",
+                                        "Innopoli",
+                                        "Teknologföreningen",
+                                        "Dipoli",
+                                        "Aalto Design Factory",
+                                        "Tuas-talo",
+                                        "Main building, Aalto University",
+                                        "Maarintalo",
+                                        "Otaranta",
+                                        "Technopolis Innopoli",
+                                        "Teknillisen Korkeakoulun kirjasto",
+                                        "Otahalli",
+                                        "Aalto, Main Building",
+                                        "Gentti, Aalto Yliopisto",
+                                        "Yths Health Center",
+                                        "Teekkarikylä",
+                                        "Maarinlahti",
+                                        "Radisson SAS Hotel Espoo";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:4;
+                           ep:hasEventObjectSamplingTime "2014-01-07T10:18:21"^^xsd:dateTime .
+
+                    _:4 geo:lat 60.187634;
+                        geo:long 24.821491 .
+}
+<Translated-Eve4> { <Eve4> :locationName "Aalto University",
+                                        "Aalto University School of Science and Technology",
+                                        "Otaniemi",
+                                        "Innopoli",
+                                        "Teknologföreningen",
+                                        "Dipoli",
+                                        "Aalto Design Factory",
+                                        "Tuas-talo",
+                                        "Main building, Aalto University",
+                                        "Maarintalo",
+                                        "Otaranta",
+                                        "Technopolis Innopoli",
+                                        "Teknillisen Korkeakoulun kirjasto",
+                                        "Otahalli",
+                                        "Aalto, Main Building",
+                                        "Gentti, Aalto Yliopisto",
+                                        "Yths Health Center",
+                                        "Teekkarikylä",
+                                        "Maarinlahti",
+                                        "Radisson SAS Hotel Espoo";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:5;
+                           ep:hasEventObjectSamplingTime "2014-01-07T11:32:34"^^xsd:dateTime .
+
+                    _:5 geo:lat 60.187595;
+                        geo:long 24.821255 .
+}
+<Translated-Eve5> { <Eve5> :locationName "Aalto University",
+                                        "Aalto University School of Science and Technology",
+                                        "Otaniemi",
+                                        "Innopoli",
+                                        "Teknologföreningen",
+                                        "Dipoli",
+                                        "Aalto Design Factory",
+                                        "Tuas-talo",
+                                        "Main building, Aalto University",
+                                        "Maarintalo",
+                                        "Otaranta",
+                                        "Technopolis Innopoli",
+                                        "Teknillisen Korkeakoulun kirjasto",
+                                        "Otahalli",
+                                        "Aalto, Main Building",
+                                        "Gentti, Aalto Yliopisto",
+                                        "Yths Health Center",
+                                        "Teekkarikylä",
+                                        "Maarinlahti",
+                                        "Radisson SAS Hotel Espoo";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:6;
+                           ep:hasEventObjectSamplingTime "2014-01-07T21:12:32"^^xsd:dateTime .
+
+                    _:6 geo:lat 60.187595;
+                        geo:long 24.821255 .
+}
+<Translated-Eve6> { <Eve6> :locationName "Aalto University",
+                                        "Aalto University School of Science and Technology",
+                                        "Otaniemi",
+                                        "Innopoli",
+                                        "Teknologföreningen",
+                                        "Dipoli",
+                                        "Aalto Design Factory",
+                                        "Tuas-talo",
+                                        "Main building, Aalto University",
+                                        "Maarintalo",
+                                        "Otaranta",
+                                        "Technopolis Innopoli",
+                                        "Teknillisen Korkeakoulun kirjasto",
+                                        "Otahalli",
+                                        "Aalto, Main Building",
+                                        "Gentti, Aalto Yliopisto",
+                                        "Yths Health Center",
+                                        "Teekkarikylä",
+                                        "Maarinlahti",
+                                        "Radisson SAS Hotel Espoo";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:7;
+                           ep:hasEventObjectSamplingTime "2014-01-08T04:02:11"^^xsd:dateTime .
+
+                    _:7 geo:lat 60.186623;
+                        geo:long 24.820017 .
+}
+<Translated-Eve7> { <Eve7> :locationName "Lauttasaari";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:8;
+                           ep:hasEventObjectSamplingTime "2014-01-08T09:18:21"^^xsd:dateTime .
+
+                    _:8 geo:lat 60.158775;
+                        geo:long 24.88149 .
+}
+<Translated-Eve8> { <Eve8> :locationName "Aalto University",
+                                        "Aalto University School of Science and Technology",
+                                        "Otaniemi",
+                                        "Innopoli",
+                                        "Teknologföreningen",
+                                        "Dipoli",
+                                        "Aalto Design Factory",
+                                        "Tuas-talo",
+                                        "Main building, Aalto University",
+                                        "Maarintalo",
+                                        "Otaranta",
+                                        "Technopolis Innopoli",
+                                        "Teknillisen Korkeakoulun kirjasto",
+                                        "Otahalli",
+                                        "Aalto, Main Building",
+                                        "Gentti, Aalto Yliopisto",
+                                        "Yths Health Center",
+                                        "Teekkarikylä",
+                                        "Maarinlahti",
+                                        "Radisson SAS Hotel Espoo";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:9;
+                           ep:hasEventObjectSamplingTime "2014-01-08T09:42:00"^^xsd:dateTime .
+
+                    _:9 geo:lat 60.187458;
+                        geo:long 24.821272 .
+}
+<Translated-Eve9> { <Eve9> :locationName "Aalto University",
+                                        "Aalto University School of Science and Technology",
+                                        "Otaniemi",
+                                        "Innopoli",
+                                        "Teknologföreningen",
+                                        "Dipoli",
+                                        "Aalto Design Factory",
+                                        "Tuas-talo",
+                                        "Main building, Aalto University",
+                                        "Maarintalo",
+                                        "Otaranta",
+                                        "Technopolis Innopoli",
+                                        "Teknillisen Korkeakoulun kirjasto",
+                                        "Otahalli",
+                                        "Aalto, Main Building",
+                                        "Gentti, Aalto Yliopisto",
+                                        "Yths Health Center",
+                                        "Teekkarikylä",
+                                        "Maarinlahti",
+                                        "Radisson SAS Hotel Espoo";
+                           ssn:Sensor :loc1;
+                           rdf:type ep:EventObject;
+                           geo:Point _:10;
+                           ep:hasEventObjectSamplingTime "2014-01-08T10:18:21"^^xsd:dateTime .
+
+                    _:10 geo:lat 60.187634;
+                         geo:long 24.821491 .
+}
+<Translated-Eve10> { <Eve10> :locationName "Aalto University",
+                                          "Aalto University School of Science and Technology",
+                                          "Otaniemi",
+                                          "Innopoli",
+                                          "Teknologföreningen",
+                                          "Dipoli",
+                                          "Aalto Design Factory",
+                                          "Tuas-talo",
+                                          "Main building, Aalto University",
+                                          "Maarintalo",
+                                          "Otaranta",
+                                          "Technopolis Innopoli",
+                                          "Teknillisen Korkeakoulun kirjasto",
+                                          "Otahalli",
+                                          "Aalto, Main Building",
+                                          "Gentti, Aalto Yliopisto",
+                                          "Yths Health Center",
+                                          "Teekkarikylä",
+                                          "Maarinlahti",
+                                          "Radisson SAS Hotel Espoo";
+                             ssn:Sensor :loc1;
+                             rdf:type ep:EventObject;
+                             geo:Point _:11;
+                             ep:hasEventObjectSamplingTime "2014-01-08T11:32:34"^^xsd:dateTime .
+
+                     _:11 geo:lat 60.187595;
+                          geo:long 24.821255 .
+}
+<Translated-Eve11> { <Eve11> :locationName "Aalto University",
+                                          "Aalto University School of Science and Technology",
+                                          "Otaniemi",
+                                          "Innopoli",
+                                          "Teknologföreningen",
+                                          "Dipoli",
+                                          "Aalto Design Factory",
+                                          "Tuas-talo",
+                                          "Main building, Aalto University",
+                                          "Maarintalo",
+                                          "Otaranta",
+                                          "Technopolis Innopoli",
+                                          "Teknillisen Korkeakoulun kirjasto",
+                                          "Otahalli",
+                                          "Aalto, Main Building",
+                                          "Gentti, Aalto Yliopisto",
+                                          "Yths Health Center",
+                                          "Teekkarikylä",
+                                          "Maarinlahti",
+                                          "Radisson SAS Hotel Espoo";
+                             ssn:Sensor :loc1;
+                             rdf:type ep:EventObject;
+                             geo:Point _:12;
+                             ep:hasEventObjectSamplingTime "2014-01-08T21:12:32"^^xsd:dateTime .
+
+                     _:12 geo:lat 60.187595;
+                          geo:long 24.821255 .
+}
+<Translated-Eve12> { <Eve12> :locationName "Aalto University",
+                                          "Aalto University School of Science and Technology",
+                                          "Otaniemi",
+                                          "Innopoli",
+                                          "Teknologföreningen",
+                                          "Dipoli",
+                                          "Aalto Design Factory",
+                                          "Tuas-talo",
+                                          "Main building, Aalto University",
+                                          "Maarintalo",
+                                          "Otaranta",
+                                          "Technopolis Innopoli",
+                                          "Teknillisen Korkeakoulun kirjasto",
+                                          "Otahalli",
+                                          "Aalto, Main Building",
+                                          "Gentti, Aalto Yliopisto",
+                                          "Yths Health Center",
+                                          "Teekkarikylä",
+                                          "Maarinlahti",
+                                          "Radisson SAS Hotel Espoo";
+                             ssn:Sensor :loc1;
+                             rdf:type ep:EventObject;
+                             geo:Point _:13;
+                             ep:hasEventObjectSamplingTime "2014-01-09T04:02:11"^^xsd:dateTime .
+
+                     _:13 geo:lat 60.186623;
+                          geo:long 24.820017 .
+}
+
+At 1.823267: Done
+
+
+
+EPA4 (Project) - using input from EPA3 local
+
+At 0.000014: Command: input-blocks, Parameter: ../data/EPA3_SampleEvents.trig
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE <http://instans.org/>
+PREFIX : <http:instans.org/default#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX ep: <http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#>
+PREFIX omgeo: <http://www.ontotext.com/owlim/geo#>
+PREFIX ff: <http://factforge.net/>
+<Projected-Eve1> { <Eve1> rdf:type ep:EventObject;
+                          ssn:Sensor :loc1;
+                          geo:Point _:2;
+                          ep:hasEventObjectSamplingTime "2014-01-07T09:18:21"^^xsd:dateTime .
+
+                   _:2 geo:long 24.88149;
+                       geo:lat 60.158775 .
+}
+<Projected-Eve2> { <Eve2> rdf:type ep:EventObject;
+                          ssn:Sensor :loc1;
+                          geo:Point _:3;
+                          ep:hasEventObjectSamplingTime "2014-01-07T09:42:00"^^xsd:dateTime .
+
+                   _:3 geo:long 24.821272;
+                       geo:lat 60.187458 .
+}
+<Projected-Eve3> { <Eve3> rdf:type ep:EventObject;
+                          ssn:Sensor :loc1;
+                          geo:Point _:4;
+                          ep:hasEventObjectSamplingTime "2014-01-07T10:18:21"^^xsd:dateTime .
+
+                   _:4 geo:long 24.821491;
+                       geo:lat 60.187634 .
+}
+<Projected-Eve4> { <Eve4> rdf:type ep:EventObject;
+                          ssn:Sensor :loc1;
+                          geo:Point _:5;
+                          ep:hasEventObjectSamplingTime "2014-01-07T11:32:34"^^xsd:dateTime .
+
+                   _:5 geo:long 24.821255;
+                       geo:lat 60.187595 .
+}
+<Projected-Eve5> { <Eve5> rdf:type ep:EventObject;
+                          ssn:Sensor :loc1;
+                          geo:Point _:6;
+                          ep:hasEventObjectSamplingTime "2014-01-07T21:12:32"^^xsd:dateTime .
+
+                   _:6 geo:long 24.821255;
+                       geo:lat 60.187595 .
+}
+<Projected-Eve6> { <Eve6> rdf:type ep:EventObject;
+                          ssn:Sensor :loc1;
+                          geo:Point _:7;
+                          ep:hasEventObjectSamplingTime "2014-01-08T04:02:11"^^xsd:dateTime .
+
+                   _:7 geo:long 24.820017;
+                       geo:lat 60.186623 .
+}
+<Projected-Eve7> { <Eve7> rdf:type ep:EventObject;
+                          ssn:Sensor :loc1;
+                          geo:Point _:8;
+                          ep:hasEventObjectSamplingTime "2014-01-08T09:18:21"^^xsd:dateTime .
+
+                   _:8 geo:long 24.88149;
+                       geo:lat 60.158775 .
+}
+<Projected-Eve8> { <Eve8> rdf:type ep:EventObject;
+                          ssn:Sensor :loc1;
+                          geo:Point _:9;
+                          ep:hasEventObjectSamplingTime "2014-01-08T09:42:00"^^xsd:dateTime .
+
+                   _:9 geo:long 24.821272;
+                       geo:lat 60.187458 .
+}
+<Projected-Eve9> { <Eve9> rdf:type ep:EventObject;
+                          ssn:Sensor :loc1;
+                          geo:Point _:10;
+                          ep:hasEventObjectSamplingTime "2014-01-08T10:18:21"^^xsd:dateTime .
+
+                   _:10 geo:long 24.821491;
+                        geo:lat 60.187634 .
+}
+<Projected-Eve10> { <Eve10> rdf:type ep:EventObject;
+                            ssn:Sensor :loc1;
+                            geo:Point _:11;
+                            ep:hasEventObjectSamplingTime "2014-01-08T11:32:34"^^xsd:dateTime .
+
+                    _:11 geo:long 24.821255;
+                         geo:lat 60.187595 .
+}
+<Projected-Eve11> { <Eve11> rdf:type ep:EventObject;
+                            ssn:Sensor :loc1;
+                            geo:Point _:12;
+                            ep:hasEventObjectSamplingTime "2014-01-08T21:12:32"^^xsd:dateTime .
+
+                    _:12 geo:long 24.821255;
+                         geo:lat 60.187595 .
+}
+<Projected-Eve12> { <Eve12> rdf:type ep:EventObject;
+                            ssn:Sensor :loc1;
+                            geo:Point _:13;
+                            ep:hasEventObjectSamplingTime "2014-01-09T04:02:11"^^xsd:dateTime .
+
+                    _:13 geo:long 24.820017;
+                         geo:lat 60.186623 .
+}
+
+At 0.071501: Done
+
+
+
+EPA5 (Split)
+
+At 0.000019: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE <http://instans.org/>
+PREFIX : <http:instans.org/default#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX ep: <http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#>
+PREFIX omgeo: <http://www.ontotext.com/owlim/geo#>
+PREFIX ff: <http://factforge.net/>
+<GeoEvents-Eve1> { _:4 geo:lat 60.158775;
+                       geo:long 24.88149 .
+
+                   <Eve1> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2014-01-07T09:18:21"^^xsd:dateTime;
+                          geo:Point _:4 .
+}
+<SensorEvents-Eve1> { <Eve1> rdf:type ep:EventObject;
+                             ssn:Sensor :loc1;
+                             ep:hasEventObjectSamplingTime "2014-01-07T09:18:21"^^xsd:dateTime .
+}
+<GeoEvents-Eve2> { _:6 geo:lat 60.187458;
+                       geo:long 24.821272 .
+
+                   <Eve2> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2014-01-07T09:42:00"^^xsd:dateTime;
+                          geo:Point _:6 .
+}
+<SensorEvents-Eve2> { <Eve2> rdf:type ep:EventObject;
+                             ssn:Sensor :loc1;
+                             ep:hasEventObjectSamplingTime "2014-01-07T09:42:00"^^xsd:dateTime .
+}
+<GeoEvents-Eve3> { _:8 geo:lat 60.187634;
+                       geo:long 24.821491 .
+
+                   <Eve3> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2014-01-07T10:18:21"^^xsd:dateTime;
+                          geo:Point _:8 .
+}
+<SensorEvents-Eve3> { <Eve3> rdf:type ep:EventObject;
+                             ssn:Sensor :loc1;
+                             ep:hasEventObjectSamplingTime "2014-01-07T10:18:21"^^xsd:dateTime .
+}
+<GeoEvents-Eve4> { _:10 geo:lat 60.187595;
+                        geo:long 24.821255 .
+
+                   <Eve4> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2014-01-07T11:32:34"^^xsd:dateTime;
+                          geo:Point _:10 .
+}
+<SensorEvents-Eve4> { <Eve4> rdf:type ep:EventObject;
+                             ssn:Sensor :loc1;
+                             ep:hasEventObjectSamplingTime "2014-01-07T11:32:34"^^xsd:dateTime .
+}
+<GeoEvents-Eve5> { _:12 geo:lat 60.187595;
+                        geo:long 24.821255 .
+
+                   <Eve5> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2014-01-07T21:12:32"^^xsd:dateTime;
+                          geo:Point _:12 .
+}
+<SensorEvents-Eve5> { <Eve5> rdf:type ep:EventObject;
+                             ssn:Sensor :loc1;
+                             ep:hasEventObjectSamplingTime "2014-01-07T21:12:32"^^xsd:dateTime .
+}
+<GeoEvents-Eve6> { _:14 geo:lat 60.186623;
+                        geo:long 24.820017 .
+
+                   <Eve6> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2014-01-08T04:02:11"^^xsd:dateTime;
+                          geo:Point _:14 .
+}
+<SensorEvents-Eve6> { <Eve6> rdf:type ep:EventObject;
+                             ssn:Sensor :loc1;
+                             ep:hasEventObjectSamplingTime "2014-01-08T04:02:11"^^xsd:dateTime .
+}
+<GeoEvents-Eve7> { _:16 geo:lat 60.158775;
+                        geo:long 24.88149 .
+
+                   <Eve7> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2014-01-08T09:18:21"^^xsd:dateTime;
+                          geo:Point _:16 .
+}
+<SensorEvents-Eve7> { <Eve7> rdf:type ep:EventObject;
+                             ssn:Sensor :loc1;
+                             ep:hasEventObjectSamplingTime "2014-01-08T09:18:21"^^xsd:dateTime .
+}
+<GeoEvents-Eve8> { _:18 geo:lat 60.187458;
+                        geo:long 24.821272 .
+
+                   <Eve8> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2014-01-08T09:42:00"^^xsd:dateTime;
+                          geo:Point _:18 .
+}
+<SensorEvents-Eve8> { <Eve8> rdf:type ep:EventObject;
+                             ssn:Sensor :loc1;
+                             ep:hasEventObjectSamplingTime "2014-01-08T09:42:00"^^xsd:dateTime .
+}
+<GeoEvents-Eve9> { _:20 geo:lat 60.187634;
+                        geo:long 24.821491 .
+
+                   <Eve9> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2014-01-08T10:18:21"^^xsd:dateTime;
+                          geo:Point _:20 .
+}
+<SensorEvents-Eve9> { <Eve9> rdf:type ep:EventObject;
+                             ssn:Sensor :loc1;
+                             ep:hasEventObjectSamplingTime "2014-01-08T10:18:21"^^xsd:dateTime .
+}
+<GeoEvents-Eve10> { _:22 geo:lat 60.187595;
+                         geo:long 24.821255 .
+
+                    <Eve10> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2014-01-08T11:32:34"^^xsd:dateTime;
+                            geo:Point _:22 .
+}
+<SensorEvents-Eve10> { <Eve10> rdf:type ep:EventObject;
+                               ssn:Sensor :loc1;
+                               ep:hasEventObjectSamplingTime "2014-01-08T11:32:34"^^xsd:dateTime .
+}
+<GeoEvents-Eve11> { _:24 geo:lat 60.187595;
+                         geo:long 24.821255 .
+
+                    <Eve11> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2014-01-08T21:12:32"^^xsd:dateTime;
+                            geo:Point _:24 .
+}
+<SensorEvents-Eve11> { <Eve11> rdf:type ep:EventObject;
+                               ssn:Sensor :loc1;
+                               ep:hasEventObjectSamplingTime "2014-01-08T21:12:32"^^xsd:dateTime .
+}
+<GeoEvents-Eve12> { _:26 geo:lat 60.186623;
+                         geo:long 24.820017 .
+
+                    <Eve12> rdf:type ep:EventObject;
+                            ep:hasEventObjectSamplingTime "2014-01-09T04:02:11"^^xsd:dateTime;
+                            geo:Point _:26 .
+}
+<SensorEvents-Eve12> { <Eve12> rdf:type ep:EventObject;
+                               ssn:Sensor :loc1;
+                               ep:hasEventObjectSamplingTime "2014-01-09T04:02:11"^^xsd:dateTime .
+}
+
+At 0.068505: Done
+
+
+
+EPA6 (Aggregate)
+
+At 0.000015: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE <http://instans.org/>
+PREFIX : <http:instans.org/default#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX ep: <http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#>
+PREFIX omgeo: <http://www.ontotext.com/owlim/geo#>
+PREFIX ff: <http://factforge.net/>
+<eventcounts> { _:8 rdf:type ep:EventObject;
+                    :eventType :eventCount;
+                    :hour 9;
+                    :count 2 .
+}
+<eventcounts> { _:11 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 10;
+                     :count 1 .
+}
+<eventcounts> { _:14 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 11;
+                     :count 1 .
+}
+<eventcounts> { _:17 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 21;
+                     :count 1 .
+}
+<eventcounts> { _:20 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 4;
+                     :count 1 .
+}
+<eventcounts> { _:24 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 9;
+                     :count 2 .
+}
+<eventcounts> { _:27 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 10;
+                     :count 1 .
+}
+<eventcounts> { _:30 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 11;
+                     :count 1 .
+}
+<eventcounts> { _:33 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 21;
+                     :count 1 .
+}
+
+At 0.065001: Done
+
+
+
+EPA7 (Compose) - using input from EPA5
+
+At 0.000024: Command: input-blocks, Parameter: ../data/EPA5_SampleEvents.trig
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE <http://instans.org/>
+PREFIX : <http:instans.org/default#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX ep: <http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#>
+PREFIX omgeo: <http://www.ontotext.com/owlim/geo#>
+PREFIX ff: <http://factforge.net/>
+<Combined-Eve1> { _:2 geo:lat 60.158775;
+                      geo:long 24.88149 .
+
+                  <Eve1> rdf:type ep:EventObject;
+                         ssn:Sensor :loc1;
+                         geo:Point _:2;
+                         ep:hasEventObjectSamplingTime "2014-01-07T09:18:21"^^xsd:dateTime .
+}
+<Combined-Eve2> { _:4 geo:lat 60.187458;
+                      geo:long 24.821272 .
+
+                  <Eve2> rdf:type ep:EventObject;
+                         ssn:Sensor :loc1;
+                         geo:Point _:4;
+                         ep:hasEventObjectSamplingTime "2014-01-07T09:42:00"^^xsd:dateTime .
+}
+<Combined-Eve3> { _:6 geo:lat 60.187634;
+                      geo:long 24.821491 .
+
+                  <Eve3> rdf:type ep:EventObject;
+                         ssn:Sensor :loc1;
+                         geo:Point _:6;
+                         ep:hasEventObjectSamplingTime "2014-01-07T10:18:21"^^xsd:dateTime .
+}
+<Combined-Eve4> { _:8 geo:lat 60.187595;
+                      geo:long 24.821255 .
+
+                  <Eve4> rdf:type ep:EventObject;
+                         ssn:Sensor :loc1;
+                         geo:Point _:8;
+                         ep:hasEventObjectSamplingTime "2014-01-07T11:32:34"^^xsd:dateTime .
+}
+<Combined-Eve5> { _:10 geo:lat 60.187595;
+                       geo:long 24.821255 .
+
+                  <Eve5> rdf:type ep:EventObject;
+                         ssn:Sensor :loc1;
+                         geo:Point _:10;
+                         ep:hasEventObjectSamplingTime "2014-01-07T21:12:32"^^xsd:dateTime .
+}
+<Combined-Eve6> { _:12 geo:lat 60.186623;
+                       geo:long 24.820017 .
+
+                  <Eve6> rdf:type ep:EventObject;
+                         ssn:Sensor :loc1;
+                         geo:Point _:12;
+                         ep:hasEventObjectSamplingTime "2014-01-08T04:02:11"^^xsd:dateTime .
+}
+<Combined-Eve7> { _:14 geo:lat 60.158775;
+                       geo:long 24.88149 .
+
+                  <Eve7> rdf:type ep:EventObject;
+                         ssn:Sensor :loc1;
+                         geo:Point _:14;
+                         ep:hasEventObjectSamplingTime "2014-01-08T09:18:21"^^xsd:dateTime .
+}
+<Combined-Eve8> { _:16 geo:lat 60.187458;
+                       geo:long 24.821272 .
+
+                  <Eve8> rdf:type ep:EventObject;
+                         ssn:Sensor :loc1;
+                         geo:Point _:16;
+                         ep:hasEventObjectSamplingTime "2014-01-08T09:42:00"^^xsd:dateTime .
+}
+<Combined-Eve9> { _:18 geo:lat 60.187634;
+                       geo:long 24.821491 .
+
+                  <Eve9> rdf:type ep:EventObject;
+                         ssn:Sensor :loc1;
+                         geo:Point _:18;
+                         ep:hasEventObjectSamplingTime "2014-01-08T10:18:21"^^xsd:dateTime .
+}
+<Combined-Eve10> { _:20 geo:lat 60.187595;
+                        geo:long 24.821255 .
+
+                   <Eve10> rdf:type ep:EventObject;
+                           ssn:Sensor :loc1;
+                           geo:Point _:20;
+                           ep:hasEventObjectSamplingTime "2014-01-08T11:32:34"^^xsd:dateTime .
+}
+<Combined-Eve11> { _:22 geo:lat 60.187595;
+                        geo:long 24.821255 .
+
+                   <Eve11> rdf:type ep:EventObject;
+                           ssn:Sensor :loc1;
+                           geo:Point _:22;
+                           ep:hasEventObjectSamplingTime "2014-01-08T21:12:32"^^xsd:dateTime .
+}
+<Combined-Eve12> { _:24 geo:lat 60.186623;
+                        geo:long 24.820017 .
+
+                   <Eve12> rdf:type ep:EventObject;
+                           ssn:Sensor :loc1;
+                           geo:Point _:24;
+                           ep:hasEventObjectSamplingTime "2014-01-09T04:02:11"^^xsd:dateTime .
+}
+
+At 0.100229: Done
+
+
+
+EPA8 (Pattern detection)
+
+At 0.000015: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE <http://instans.org/>
+PREFIX : <http:instans.org/default#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX ep: <http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#>
+PREFIX omgeo: <http://www.ontotext.com/owlim/geo#>
+PREFIX ff: <http://factforge.net/>
+<PatternDetect> { _:18 rdf:type ep:EventObject;
+                       :patterndetected "BackAndForth!";
+                       ssn:Sensor :loc1;
+                       :lastEvent <Eve3> .
+}
+<PatternDetect> { _:38 rdf:type ep:EventObject;
+                       :patterndetected "BackAndForth!";
+                       ssn:Sensor :loc1;
+                       :lastEvent <Eve9> .
+}
+
+At 0.077821: Done
+
+
+
+EPA-All (Combination of all agents)
+
+At 0.000024: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE <http://instans.org/>
+PREFIX : <http:instans.org/default#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX ep: <http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#>
+PREFIX omgeo: <http://www.ontotext.com/owlim/geo#>
+PREFIX ff: <http://factforge.net/>
+<eventcounts> { _:26 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 9;
+                     :count 2 .
+}
+<PatternDetect> { _:29 rdf:type ep:EventObject;
+                       :patterndetected "Pattern detected!";
+                       ssn:Sensor :loc1;
+                       :lastEvent <Eve3> .
+}
+<eventcounts> { _:35 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 10;
+                     :count 1 .
+}
+<eventcounts> { _:42 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 11;
+                     :count 1 .
+}
+<eventcounts> { _:47 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 21;
+                     :count 1 .
+}
+<eventcounts> { _:52 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 4;
+                     :count 1 .
+}
+<eventcounts> { _:62 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 9;
+                     :count 2 .
+}
+<PatternDetect> { _:65 rdf:type ep:EventObject;
+                       :patterndetected "Pattern detected!";
+                       ssn:Sensor :loc1;
+                       :lastEvent <Eve9> .
+}
+<eventcounts> { _:71 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 10;
+                     :count 1 .
+}
+<eventcounts> { _:78 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 11;
+                     :count 1 .
+}
+<eventcounts> { _:83 rdf:type ep:EventObject;
+                     :eventType :eventCount;
+                     :hour 21;
+                     :count 1 .
+}
+
+At 0.195412: Done

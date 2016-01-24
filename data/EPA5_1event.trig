@@ -1,0 +1,20 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+BASE <http://instans.org/>
+PREFIX : <http:instans.org/default#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX ep: <http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#>
+PREFIX omgeo: <http://www.ontotext.com/owlim/geo#>
+PREFIX ff: <http://factforge.net/>
+<GeoEvents-Eve1> { _:4 geo:lat 60.15922;
+                       geo:long 24.876108 .
+
+                   <Eve1> rdf:type ep:EventObject;
+                          ep:hasEventObjectSamplingTime "2012-03-05T13:32:28"^^xsd:dateTime;
+                          geo:Point _:4 .
+}
+<SensorEvents-Eve1> { <Eve1> rdf:type ep:EventObject;
+                             ssn:Sensor <http://#p1>;
+                             ep:hasEventObjectSamplingTime "2012-03-05T13:32:28"^^xsd:dateTime .
+}
