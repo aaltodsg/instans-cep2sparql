@@ -12,7 +12,7 @@ PREFIX ff: <http://factforge.net/>
 
 # @name EPA1-Stateless
 INSERT { GRAPH ?poststateless { ?s ?p ?o } }
-WHERE { GRAPH ?g { FILTER (strStarts(str(?g),concat(str(<>),"Eve")))
+WHERE { GRAPH ?g { FILTER (strStarts(str(?g),concat(str(<>),"Input-Eve")))
     ?s ?p ?o .
     ?event ep:hasEventObjectSamplingTime ?time }
   FILTER ( ( HOURS(?time) > 8 ) && ( HOURS(?time) < 17 ) )
@@ -196,7 +196,7 @@ INSERT DATA { GRAPH <memory> { :initHour :hour -1 ; :counter -1 } } ;
 # @name EPA6-2-ExtractIncomingHour
 INSERT { GRAPH <memory> { ?event :hasAggrHour ?hour } }
 WHERE  { GRAPH ?g {
-    FILTER ( strStarts(str(?g),concat(str(<>),"Eve")) )
+    FILTER ( strStarts(str(?g),concat(str(<>),"Input-Eve")) )
     ?event ep:hasEventObjectSamplingTime ?time }
   BIND ( HOURS(?time) as ?hour ) } ;
 
@@ -267,7 +267,7 @@ INSERT { GRAPH <memory> {
     [] a :transformPrevPoint ;
        ssn:Sensor ?sensor ;
        geo:Point  [ geo:lat ?lat ; geo:long ?long ; ]  } }
-WHERE { GRAPH ?g { FILTER (strStarts(str(?g),concat(str(<>),"Eve")))
+WHERE { GRAPH ?g { FILTER (strStarts(str(?g),concat(str(<>),"Input-Eve")))
     ?event a ep:EventObject ;
            ssn:Sensor ?sensor ;
            geo:Point [ geo:lat ?lat ; geo:long ?long ; ] }
@@ -284,7 +284,7 @@ INSERT { GRAPH <memory> { # Write new point
            ssn:Sensor ?sensor ;
            ep:hasEventObjectSamplingTime ?time ;
 	   :direction ?dir } }
-WHERE { GRAPH ?g { FILTER (strStarts(str(?g),concat(str(<>),"Eve")))
+WHERE { GRAPH ?g { FILTER (strStarts(str(?g),concat(str(<>),"Input-Eve")))
     ?event a ep:EventObject ;
            ssn:Sensor ?sensor ;
            ep:hasEventObjectSamplingTime ?time ;

@@ -11,22 +11,22 @@ PREFIX ff: <http://factforge.net/>
 # @name EPA1-Stateless
 CONSTRUCT { GRAPH ?newgraph { ?s ?p ?o } }
 WHERE { GRAPH ?g {
-    FILTER ( strStarts(str(?g),concat(str(<>),"Eve")) )
+    FILTER ( strStarts(str(?g),concat(str(<>),"Input-Eve")) )
     ?s ?p ?o .
     ?event ep:hasEventObjectSamplingTime ?time }
   FILTER ( ( HOURS(?time) > 8 ) && ( HOURS(?time) < 17 ) )
   BIND (IRI(concat("Poststateless-",strAfter(str(?event),str(<>)))) AS ?newgraph) } ;
 
-#@name Cleanup-Input
-# DELETE { GRAPH ?g1 { ?s ?p ?o } }
-# WHERE {
-#   GRAPH ?g1 {
-#     FILTER ( strStarts(str(?g1),concat(str(<>),"Eve")) )
-#     ?s ?p ?o .
-#     ?event ep:hasEventObjectSamplingTime ?time1 }
-#   FILTER EXISTS { GRAPH ?g2 {
-#     FILTER ( strStarts(str(?g2),concat(str(<>),"Eve")) )
-#       ?event2 ep:hasEventObjectSamplingTime ?time2 .
-#       FILTER (?time1 < ?time2) } }
-# };
+# @name Cleanup-Poststateless
+DELETE { GRAPH ?g1 { ?s ?p ?o } }
+WHERE { GRAPH ?g1 {
+    FILTER ( strStarts(str(?g1),"Poststateless-Eve") )
+    ?event1 ep:hasEventObjectSamplingTime ?time1 .
+    ?s ?p ?o }
+  FILTER EXISTS { GRAPH ?g2 {
+    FILTER ( strStarts(str(?g2),"Poststateless-Eve") )
+    ?event2 ep:hasEventObjectSamplingTime ?time2 .
+      FILTER (?time1 < ?time2)
+  }  }
+} ;
 

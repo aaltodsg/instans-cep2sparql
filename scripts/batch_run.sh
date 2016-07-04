@@ -23,11 +23,11 @@ echo -e "\n\n\nEPA5 (Split)"
 echo -e "\n\n\nEPA6 (Aggregate)"
 ./EPArun.sh EPA6 1000events
 
-echo -e "\n\n\nEPA7 (Compose) - using input from EPA5"
+echo -e "\n\n\nEPA7 (Compose) - using input from EPA5, always cleanup-rule"
 ./EPA7run.sh EPA5_1000events
 
-echo -e "\n\n\nEPA8 (Pattern detection)"
+echo -e "\n\n\nEPA8 (Pattern detection) - always remove-policy"
 ./EPArun.sh EPA8 1000events
 
-echo -e "\n\n\nEPA-All (Combination of all agents)"
+echo -e "\n\n\nEPA-All (Combination of all agents) - always remove-policy"
 ./EPArun.sh EPA-All 1000events

@@ -11,7 +11,7 @@ INSERT { GRAPH <memory> {
     [] a :transformPrevPoint ;
        ssn:Sensor ?sensor ;
        geo:Point  [ geo:lat ?lat ; geo:long ?long ; ]  } }
-WHERE { GRAPH ?g { FILTER (strStarts(str(?g),concat(str(<>),"Eve")))
+WHERE { GRAPH ?g { FILTER (strStarts(str(?g),concat(str(<>),"Input-Eve")))
     ?event a ep:EventObject ;
            ssn:Sensor ?sensor ;
            geo:Point [ geo:lat ?lat ; geo:long ?long ; ] }
@@ -28,7 +28,7 @@ INSERT { GRAPH <memory> { # Write new point
            ssn:Sensor ?sensor ;
            ep:hasEventObjectSamplingTime ?time ;
 	   :direction ?dir } }
-WHERE { GRAPH ?g { FILTER (strStarts(str(?g),concat(str(<>),"Eve")))
+WHERE { GRAPH ?g { FILTER (strStarts(str(?g),concat(str(<>),"Input-Eve")))
     ?event a ep:EventObject ;
            ssn:Sensor ?sensor ;
            ep:hasEventObjectSamplingTime ?time ;

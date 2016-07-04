@@ -17,7 +17,7 @@ CONSTRUCT { GRAPH ?geograph {
            ssn:Sensor ?sensor ;
            ep:hasEventObjectSamplingTime ?time } }
 WHERE { GRAPH ?g { # Match incoming events
-    FILTER ( strStarts(str(?g),concat(str(<>),"Eve")) )
+    FILTER ( strStarts(str(?g),concat(str(<>),"Input-Eve")) )
     ?event a ep:EventObject ;
            ssn:Sensor ?sensor ;
            geo:Point [ geo:lat ?lat ; geo:long ?long ; ] ;
@@ -26,27 +26,27 @@ WHERE { GRAPH ?g { # Match incoming events
   BIND (IRI(concat("SensorEvents-",strAfter(str(?event),str(<>)))) AS ?sensorgraph) } ;
 
 # @name Cleanup-SensorEvents
-# DELETE { GRAPH ?g1 { ?s ?p ?o } }
-# WHERE { GRAPH ?g1 {
-#     FILTER ( strStarts(str(?g1),"SensorEvents-Eve") )
-#     ?event1 ep:hasEventObjectSamplingTime ?time1 .
-#     ?s ?p ?o }
-#   FILTER EXISTS { GRAPH ?g2 {
-#     FILTER ( strStarts(str(?g2),"SensorEvents-Eve") )
-#     ?event2 ep:hasEventObjectSamplingTime ?time2 .
-#       FILTER (?time1 < ?time2)
-#   }  }
-# } ;
+DELETE { GRAPH ?g1 { ?s ?p ?o } }
+WHERE { GRAPH ?g1 {
+    FILTER ( strStarts(str(?g1),"SensorEvents-Eve") )
+    ?event1 ep:hasEventObjectSamplingTime ?time1 .
+    ?s ?p ?o }
+  FILTER EXISTS { GRAPH ?g2 {
+    FILTER ( strStarts(str(?g2),"SensorEvents-Eve") )
+    ?event2 ep:hasEventObjectSamplingTime ?time2 .
+      FILTER (?time1 < ?time2)
+  }  }
+} ;
 
 # @name Cleanup-GeoEvents
-# DELETE { GRAPH ?g1 { ?s ?p ?o } }
-# WHERE { GRAPH ?g1 {
-#     FILTER ( strStarts(str(?g1),"GeoEvents-Eve") )
-#     ?event1 ep:hasEventObjectSamplingTime ?time1 .
-#     ?s ?p ?o }
-#   FILTER EXISTS { GRAPH ?g2 {
-#     FILTER ( strStarts(str(?g2),"GeoEvents-Eve") )
-#     ?event2 ep:hasEventObjectSamplingTime ?time2 .
-#       FILTER (?time1 < ?time2)
-#   }  }
-# } ;
+DELETE { GRAPH ?g1 { ?s ?p ?o } }
+WHERE { GRAPH ?g1 {
+    FILTER ( strStarts(str(?g1),"GeoEvents-Eve") )
+    ?event1 ep:hasEventObjectSamplingTime ?time1 .
+    ?s ?p ?o }
+  FILTER EXISTS { GRAPH ?g2 {
+    FILTER ( strStarts(str(?g2),"GeoEvents-Eve") )
+    ?event2 ep:hasEventObjectSamplingTime ?time2 .
+      FILTER (?time1 < ?time2)
+  }  }
+} ;

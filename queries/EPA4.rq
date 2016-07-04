@@ -18,14 +18,14 @@ WHERE { GRAPH ?g {
   BIND (IRI(concat("Projected-",strAfter(str(?event),str(<>)))) AS ?newgraph) } ;
 
 # @name Cleanup-Projected
-# DELETE { GRAPH ?g1 { ?s ?p ?o } }
-# WHERE { GRAPH ?g1 {
-#     FILTER ( strStarts(str(?g1),"Projected-Eve") )
-#     ?event1 ep:hasEventObjectSamplingTime ?time1 .
-#     ?s ?p ?o }
-#   FILTER EXISTS { GRAPH ?g2 {
-#     FILTER ( strStarts(str(?g2),"Projected-Eve") )
-#     ?event2 ep:hasEventObjectSamplingTime ?time2 .
-#       FILTER (?time1 < ?time2)
-#   }  }
-# } ;
+DELETE { GRAPH ?g1 { ?s ?p ?o } }
+WHERE { GRAPH ?g1 {
+    FILTER ( strStarts(str(?g1),"Projected-Eve") )
+    ?event1 ep:hasEventObjectSamplingTime ?time1 .
+    ?s ?p ?o }
+  FILTER EXISTS { GRAPH ?g2 {
+    FILTER ( strStarts(str(?g2),"Projected-Eve") )
+    ?event2 ep:hasEventObjectSamplingTime ?time2 .
+      FILTER (?time1 < ?time2)
+  }  }
+} ;

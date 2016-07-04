@@ -25,6 +25,19 @@ WHERE {
   BIND (IRI(concat("Combined-",strAfter(str(?event),str(<>)))) AS ?combined)
 } ;
 
+# @name Cleanup-Combined
+DELETE { GRAPH ?g1 { ?s ?p ?o } }
+WHERE { GRAPH ?g1 {
+    FILTER ( strStarts(str(?g1),"Combined-Eve") )
+    ?event1 ep:hasEventObjectSamplingTime ?time1 .
+    ?s ?p ?o }
+  FILTER EXISTS { GRAPH ?g2 {
+    FILTER ( strStarts(str(?g2),"Combined-Eve") )
+    ?event2 ep:hasEventObjectSamplingTime ?time2 .
+      FILTER (?time1 < ?time2)
+  }  }
+} ;
+
 # Note: Does not work with an automatic "remove"-policy, so input cleanup is handled manually:
 
 # @name Cleanup-SensorEvents

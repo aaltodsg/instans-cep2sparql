@@ -14,7 +14,7 @@ INSERT DATA { GRAPH <memory> { :aggrHour :hour -1 ; :counter 0 } } ;
 # @name EPA6-2-ExtractIncomingHour
 INSERT { GRAPH <memory> { ?event :hasAggrHour ?hour } }
 WHERE  { GRAPH ?g {
-    FILTER ( strStarts(str(?g),concat(str(<>),"Eve")) )
+    FILTER ( strStarts(str(?g),concat(str(<>),"Input-Eve")) )
     ?event ep:hasEventObjectSamplingTime ?time }
   BIND ( HOURS(?time) as ?hour ) } ;
 

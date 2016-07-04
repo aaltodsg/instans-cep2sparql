@@ -13,7 +13,7 @@ CONSTRUCT { GRAPH ?newgraph {
     ?event :locationName ?label .
     ?s ?p ?o } }
 WHERE { GRAPH ?g { 
-    FILTER ( strStarts(str(?g),concat(str(<>),"Eve")) )
+    FILTER ( strStarts(str(?g),concat(str(<>),"Input-Eve")) )
     ?s ?p ?o .
     ?event a ep:EventObject ;
            geo:Point [ geo:lat ?lat; geo:long ?long ] .
@@ -24,14 +24,14 @@ WHERE { GRAPH ?g {
   BIND (IRI(concat("Translated-",strAfter(str(?event),str(<>)))) AS ?newgraph) } } ;
 
 # @name Cleanup-Translated
-# DELETE { GRAPH ?g1 { ?s ?p ?o } }
-# WHERE { GRAPH ?g1 {
-#     FILTER ( strStarts(str(?g1),"Translated-Eve") )
-#     ?event1 ep:hasEventObjectSamplingTime ?time1 .
-#     ?s ?p ?o }
-#   FILTER EXISTS { GRAPH ?g2 {
-#     FILTER ( strStarts(str(?g2),"Translated-Eve") )
-#     ?event2 ep:hasEventObjectSamplingTime ?time2 .
-#       FILTER (?time1 < ?time2)
-#   }  }
-# } ;
+DELETE { GRAPH ?g1 { ?s ?p ?o } }
+WHERE { GRAPH ?g1 {
+    FILTER ( strStarts(str(?g1),"Translated-Eve") )
+    ?event1 ep:hasEventObjectSamplingTime ?time1 .
+    ?s ?p ?o }
+  FILTER EXISTS { GRAPH ?g2 {
+    FILTER ( strStarts(str(?g2),"Translated-Eve") )
+    ?event2 ep:hasEventObjectSamplingTime ?time2 .
+      FILTER (?time1 < ?time2)
+  }  }
+} ;

@@ -8,7 +8,7 @@ PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
 PREFIX ssn: <http://purl.oclc.org/NET/ssnx/ssn#>
 PREFIX ep: <http://www.ontologydesignpatterns.org/cp/owl/eventprocessing.owl#>
-<Eve1> { _:5 geo:lat 60.15922234475837;
+<Input-Eve1> { _:5 geo:lat 60.15922234475837;
              geo:long 24.87610729902513 .
 
          <Eve1> rdf:type ep:EventObject;

@@ -18,7 +18,7 @@ INSERT { GRAPH <memory> { :stateful :hour ?hour ;
                                     :passEvent ?event } }
 WHERE { GRAPH ?g {
     # Matches basic events, update for other Channel names
-    FILTER ( strStarts(str(?g),concat(str(<>),"Eve")) )
+    FILTER ( strStarts(str(?g),concat(str(<>),"Input-Eve")) )
     ?event ep:hasEventObjectSamplingTime ?time }
   GRAPH <memory> { :stateful :hour ?prevhour ;
                              :passEvent ?prevPass }
@@ -32,7 +32,7 @@ WHERE {
   GRAPH <memory> { :stateful :passEvent ?event }
   GRAPH ?g {
     # Matches basic events, update for other Channel names
-    FILTER ( strStarts(str(?g),concat(str(<>),"Eve")) )
+    FILTER ( strStarts(str(?g),concat(str(<>),"Input-Eve")) )
     ?event ep:hasEventObjectSamplingTime ?time .
     ?s ?p ?o }
   BIND (IRI(concat("Poststateful-",strAfter(str(?event),str(<>)))) AS ?newgraph) } ;
@@ -40,14 +40,14 @@ WHERE {
 # Cleanup <poststateless> when a newer event is available
 
 # @name Cleanup-Poststateless
-# DELETE { GRAPH ?g1 { ?s ?p ?o } }
-# WHERE { GRAPH ?g1 {
-#     FILTER ( strStarts(str(?g1),concat(str(<>),"Poststateless-Eve")) )
-#     ?event1 ep:hasEventObjectSamplingTime ?time1 .
-#     ?s ?p ?o }
-#   FILTER EXISTS { GRAPH ?g2 {
-#     FILTER ( strStarts(str(?g2),concat(str(<>),"Poststateless-Eve")) )
-#     ?event2 ep:hasEventObjectSamplingTime ?time2 .
-#       FILTER (?time1 < ?time2)
-#   }  }
-# } ;
+DELETE { GRAPH ?g1 { ?s ?p ?o } }
+WHERE { GRAPH ?g1 {
+    FILTER ( strStarts(str(?g1),concat(str(<>),"Poststateless-Eve")) )
+    ?event1 ep:hasEventObjectSamplingTime ?time1 .
+    ?s ?p ?o }
+  FILTER EXISTS { GRAPH ?g2 {
+    FILTER ( strStarts(str(?g2),concat(str(<>),"Poststateless-Eve")) )
+    ?event2 ep:hasEventObjectSamplingTime ?time2 .
+      FILTER (?time1 < ?time2)
+  }  }
+} ;

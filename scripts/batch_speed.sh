@@ -32,11 +32,6 @@
 ./EPArun_speed.sh EPA6 1000events
 ./EPArun_speed.sh EPA6 10000events
 
-./EPA7run_speed.sh EPA5_1event
-./EPA7run_speed.sh EPA5_100events
-./EPA7run_speed.sh EPA5_1000events
-./EPA7run_speed.sh EPA5_10000events
-
 ./EPArun_speed.sh EPA8 1event
 ./EPArun_speed.sh EPA8 100events
 ./EPArun_speed.sh EPA8 1000events

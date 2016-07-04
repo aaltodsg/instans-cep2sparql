@@ -3,7 +3,7 @@
 
 EPA1 (Stateless filter)
 
-At 0.000016: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
+At 0.000001: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -78,13 +78,13 @@ PREFIX ff: <http://factforge.net/>
                              geo:lat 60.187595 .
 }
 
-At 0.070387: Done
+At 0.072991: Done
 
 
 
 EPA2 (Stateful filter)
 
-At 0.000016: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
+At 0.000001: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -175,13 +175,13 @@ PREFIX ff: <http://factforge.net/>
                             geo:long 24.820017 .
 }
 
-At 0.069447: Done
+At 0.100805: Done
 
 
 
 EPA3 (Enrich) local
 
-At 0.000014: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
+At 0.000001: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -300,13 +300,13 @@ PREFIX ff: <http://factforge.net/>
                           geo:long 24.820017 .
 }
 
-At 0.069351: Done
+At 0.102927: Done
 
 
 
 EPA3 (Enrich) remote service
 
-At 0.000016: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
+At 0.000000: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -615,13 +615,13 @@ PREFIX ff: <http://factforge.net/>
                           geo:long 24.820017 .
 }
 
-At 1.823267: Done
+At 2.539236: Done
 
 
 
 EPA4 (Project) - using input from EPA3 local
 
-At 0.000014: Command: input-blocks, Parameter: ../data/EPA3_SampleEvents.trig
+At 0.000000: Command: input-blocks, Parameter: ../data/EPA3_SampleEvents.trig
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -728,13 +728,13 @@ PREFIX ff: <http://factforge.net/>
                          geo:lat 60.186623 .
 }
 
-At 0.071501: Done
+At 0.081455: Done
 
 
 
 EPA5 (Split)
 
-At 0.000019: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
+At 0.000001: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -877,13 +877,13 @@ PREFIX ff: <http://factforge.net/>
                                ep:hasEventObjectSamplingTime "2014-01-09T04:02:11"^^xsd:dateTime .
 }
 
-At 0.068505: Done
+At 0.077514: Done
 
 
 
 EPA6 (Aggregate)
 
-At 0.000015: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
+At 0.000000: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -939,13 +939,13 @@ PREFIX ff: <http://factforge.net/>
                      :count 1 .
 }
 
-At 0.065001: Done
+At 0.065991: Done
 
 
 
 EPA7 (Compose) - using input from EPA5
 
-At 0.000024: Command: input-blocks, Parameter: ../data/EPA5_SampleEvents.trig
+At 0.000000: Command: input-blocks, Parameter: ../data/EPA5_SampleEvents.trig
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -1052,13 +1052,13 @@ PREFIX ff: <http://factforge.net/>
                            ep:hasEventObjectSamplingTime "2014-01-09T04:02:11"^^xsd:dateTime .
 }
 
-At 0.100229: Done
+At 0.111394: Done
 
 
 
 EPA8 (Pattern detection)
 
-At 0.000015: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
+At 0.000001: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -1079,13 +1079,13 @@ PREFIX ff: <http://factforge.net/>
                        :lastEvent <Eve9> .
 }
 
-At 0.077821: Done
+At 0.094902: Done
 
 
 
 EPA-All (Combination of all agents)
 
-At 0.000024: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
+At 0.000001: Command: input-blocks, Parameter: ../data/CEP2SPARQL_SampleEvents.trig
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -1151,4 +1151,4 @@ PREFIX ff: <http://factforge.net/>
                      :count 1 .
 }
 
-At 0.195412: Done
+At 0.252625: Done
