@@ -2,8 +2,6 @@
 
 
 EPA1 (Stateless filter)
-
-At 0.000013: Command: input-blocks, Parameter: ../data/1000events.trig
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -8017,13 +8015,9 @@ PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
                                  geo:lat 60.161133 .
 }
 
-At 1.075954: Done
-
 
 
 EPA2 (Stateful filter)
-
-At 0.000013: Command: input-blocks, Parameter: ../data/1000events.trig
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -8053,13 +8047,9 @@ PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
                               geo:long 24.878517 .
 }
 
-At 0.764446: Done
-
 
 
 EPA3 (Enrich) local
-
-At 0.000013: Command: input-blocks, Parameter: ../data/1000events.trig
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -17073,13 +17063,9 @@ PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
                               geo:long 24.87439 .
 }
 
-At 1.244904: Done
-
 
 
 EPA4 (Project) - using input from EPA3 local
-
-At 0.000023: Command: input-blocks, Parameter: ../data/EPA3_1000events.trig
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -25090,13 +25076,9 @@ PREFIX ff: <http://factforge.net/>
                              geo:lat 60.161133 .
 }
 
-At 1.118253: Done
-
 
 
 EPA5 (Split)
-
-At 0.000013: Command: input-blocks, Parameter: ../data/1000events.trig
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -36110,13 +36092,9 @@ PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
                                    ep:hasEventObjectSamplingTime "2012-03-05T14:10:26"^^xsd:dateTime .
 }
 
-At 0.894181: Done
-
 
 
 EPA6 (Aggregate)
-
-At 0.000014: Command: input-blocks, Parameter: ../data/1000events.trig
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -36135,13 +36113,9 @@ PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
                       :count 781 .
 }
 
-At 0.619772: Done
 
 
-
-EPA7 (Compose) - using input from EPA5
-
-At 0.000014: Command: input-blocks, Parameter: ../data/EPA5_1000events.trig
+EPA7 (Compose) - using input from EPA5, always cleanup-rule
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -44152,13 +44126,9 @@ PREFIX ff: <http://factforge.net/>
                                ep:hasEventObjectSamplingTime "2012-03-05T14:10:26"^^xsd:dateTime .
 }
 
-At 1.189609: Done
 
 
-
-EPA8 (Pattern detection)
-
-At 0.000059: Command: input-blocks, Parameter: ../data/1000events.trig
+EPA8 (Pattern detection) - always remove-policy
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -44197,13 +44167,9 @@ PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
                          :lastEvent <Eve466> .
 }
 
-At 1.768995: Done
 
 
-
-EPA-All (Combination of all agents)
-
-At 0.000014: Command: input-blocks, Parameter: ../data/1000events.trig
+EPA-All (Combination of all agents) - always remove-policy
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 BASE <http://instans.org/>
@@ -44246,5 +44212,3 @@ PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
                        :hour 13;
                        :count 781 .
 }
-
-At 7.889583: Done
